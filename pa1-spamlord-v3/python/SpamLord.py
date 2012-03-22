@@ -5,19 +5,63 @@ import pprint
 
 dot = '(?=\.|\sdot\s)'
 
-at = '(?:\s?@\s?|\sat\s)'
+at = '(?:\s?@\s?|\sat\s|\&#x40;)'
 tld_list = ['AC' , 'AD' , 'AE' , 'AERO' , 'AF' , 'AG' , 'AI' , 'AL' , 'AM' , 'AN' , 'AO' , 'AQ' , 'AR' , 'ARPA' , 'AS' , 'ASIA' , 'AT' , 'AU' , 'AW' , 'AX' , 'AZ' , 'BA' , 'BB' , 'BD' , 'BE' , 'BF' , 'BG' , 'BH' , 'BI' , 'BIZ' , 'BJ' , 'BM' , 'BN' , 'BO' , 'BR' , 'BS' , 'BT' , 'BV' , 'BW' , 'BY' , 'BZ' , 'CA' , 'CAT' , 'CC' , 'CD' , 'CF' , 'CG' , 'CH' , 'CI' , 'CK' , 'CL' , 'CM' , 'CN' , 'CO' , 'COM' , 'COOP' , 'CR' , 'CU' , 'CV' , 'CW' , 'CX' , 'CY' , 'CZ' , 'DE' , 'DJ' , 'DK' , 'DM' , 'DO' , 'DZ' , 'EC' , 'EDU' , 'EE' , 'EG' , 'ER' , 'ES' , 'ET' , 'EU' , 'FI' , 'FJ' , 'FK' , 'FM' , 'FO' , 'FR' , 'GA' , 'GB' , 'GD' , 'GE' , 'GF' , 'GG' , 'GH' , 'GI' , 'GL' , 'GM' , 'GN' , 'GOV' , 'GP' , 'GQ' , 'GR' , 'GS' , 'GT' , 'GU' , 'GW' , 'GY' , 'HK' , 'HM' , 'HN' , 'HR' , 'HT' , 'HU' , 'ID' , 'IE' , 'IL' , 'IM' , 'IN' , 'INFO' , 'INT' , 'IO' , 'IQ' , 'IR' , 'IS' , 'IT' , 'JE' , 'JM' , 'JO' , 'JOBS' , 'JP' , 'KE' , 'KG' , 'KH' , 'KI' , 'KM' , 'KN' , 'KP' , 'KR' , 'KW' , 'KY' , 'KZ' , 'LA' , 'LB' , 'LC' , 'LI' , 'LK' , 'LR' , 'LS' , 'LT' , 'LU' , 'LV' , 'LY' , 'MA' , 'MC' , 'MD' , 'ME' , 'MG' , 'MH' , 'MIL' , 'MK' , 'ML' , 'MM' , 'MN' , 'MO' , 'MOBI' , 'MP' , 'MQ' , 'MR' , 'MS' , 'MT' , 'MU' , 'MUSEUM' , 'MV' , 'MW' , 'MX' , 'MY' , 'MZ' , 'NA' , 'NAME' , 'NC' , 'NE' , 'NET' , 'NF' , 'NG' , 'NI' , 'NL' , 'NO' , 'NP' , 'NR' , 'NU' , 'NZ' , 'OM' , 'ORG' , 'PA' , 'PE' , 'PF' , 'PG' , 'PH' , 'PK' , 'PL' , 'PM' , 'PN' , 'PR' , 'PRO' , 'PS' , 'PT' , 'PW' , 'PY' , 'QA' , 'RE' , 'RO' , 'RS' , 'RU' , 'RW' , 'SA' , 'SB' , 'SC' , 'SD' , 'SE' , 'SG' , 'SH' , 'SI' , 'SJ' , 'SK' , 'SL' , 'SM' , 'SN' , 'SO' , 'SR' , 'ST' , 'SU' , 'SV' , 'SX' , 'SY' , 'SZ' , 'TC' , 'TD' , 'TEL' , 'TF' , 'TG' , 'TH' , 'TJ' , 'TK' , 'TL' , 'TM' , 'TN' , 'TO' , 'TP' , 'TR' , 'TRAVEL' , 'TT' , 'TV' , 'TW' , 'TZ' , 'UA' , 'UG' , 'UK' , 'US' , 'UY' , 'UZ' , 'VA' , 'VC' , 'VE' , 'VG' , 'VI' , 'VN' , 'VU' , 'WF' , 'WS' , 'XXX' , 'YE' , 'YT' , 'ZA' , 'ZM' , 'ZW']
+tld_list.sort(key=lambda x: len(x), reverse=True)
 tld_group = r'(%s)' % '|'.join(tld_list)
 
-pat = '([\w\\+.-]+)' + at + \
-                '([\w\.-]+)' + \
+pat = '([\w\+\.\-]+)' + at + \
+                '([\w\.\-]+)' + \
                 '(?<=\.)' +  tld_group
                 
-pat2 = '([\w\.\+-]+)' + at + \
-                '([\w\.-]+\sdot\s)+' + \
-                '(?<=\sdot\s)' +  '(edu)'
+pat2 = '([\w\.\+\-]+)' + at + \
+                '([\w\.\-]+\sdot\s)+' + \
+                '(?<=\sdot\s)' +  tld_group
                 
-print pat2
+
+tld_list_slashes = []
+for tld in tld_list:
+    slashed_tld =''
+    for char in tld:
+        slashed_tld += '-' + char
+    tld_list_slashes.append(slashed_tld)
+
+tld_group_slashes =  r'(%s)' % '|'.join(tld_list_slashes)    
+    
+pat3 = '(\w\-)+(@\-)(\w\-)+(\.)' + tld_group_slashes
+
+pat4 = '([\w\.\+\-]+)' + '\swhere\s' + \
+                '([\w\.\-]+)' + \
+                '(\sdom\s)' +  tld_group
+                
+pat5 = '([\w\.\+\-]+)' + at + \
+                '([\w\.\-;,]+)' + \
+                '(?<=;)' +  tld_group
+                
+pat6 = '([\w\.\+\-]+)' + at + \
+                '([\w\.\-;,]+)' + \
+                '(?<=,)' +  tld_group
+                
+pat7 = "obfuscate\('([\w\.\-]+)','([\w\.-]+)'\)"
+
+pat8 = '([\w\.\+\-]+)' + '\s\(followed by\s(?:"|&ldquo;)' + at + '([\w\.\-]+)'+ '(?:"|&rdquo;)\)'
+
+pat9 = '([\w\.\+\-]+)' + at + \
+                '([\w\.\-]+\s){1}' + \
+                '(?<=\s)' +  tld_group
+                
+pat10 = '([\w\.\+\-]+)' + at + \
+                '([\w\.\-]+\sdo*t\s)+' + \
+                '(?<=\sdt\s)' +  tld_group
+                
+phone1 = '(\d{3})(?:\s|-|\)\s|\))(\d{3})(?:\s|-)(\d{4})'
+
+#sys.stderr.write(pat+'\n')
+#sys.stderr.write(pat2+'\n')
+#sys.stderr.write(pat3+'\n')
+#sys.stderr.write(phone1+'\n')
+
+sys.stderr.write(pat9+'\n')
 
 """ 
 TODO
@@ -44,26 +88,104 @@ def process_file(name, f):
     # note that debug info should be printed to stderr
     # sys.stderr.write('[process_file]\tprocessing file: %s\n' % (path))
     res = []
-    patterns = []
-    patterns.append(pat)
     
     for line in f:
-    	for pattern in patterns:
-            matches = re.findall(pattern,line, re.IGNORECASE)
+        matches = re.findall(pat,line, re.IGNORECASE)
+        for m in matches:
+            email = '%s@%s%s' % m
+            res.append((name,'e',email))
+                
+            
+        matches = re.findall(pat2,line, re.IGNORECASE)
+        if matches:
+            line = re.sub(' dot ','.',line.lower())
+            
+            matches = re.findall(pat,line, re.IGNORECASE)
+            for m in matches:
+                email = '%s@%s%s' % m
+                res.append((name,'e',email))
+            
+        matches = re.findall(pat3,line, re.IGNORECASE)
+        if matches:
+            line = re.sub('-','',line)
+            
+            
+            matches = re.findall(pat,line, re.IGNORECASE)
+            for m in matches:
+                email = '%s@%s%s' % m
+                res.append((name,'e',email))
+                
+        matches = re.findall(pat4,line, re.IGNORECASE)
+        for m in matches:
+            
+            email = '%s@%s%s%s' % m
+            
+            email = re.sub(' where ','.',email.lower())
+            email = re.sub(' dom ','.',email.lower())
+            res.append((name,'e',email))
+        
+        matches = re.findall(pat5,line, re.IGNORECASE)
+        if matches:
+            
+            line = re.sub(';','.',line.lower())
+            
+            matches = re.findall(pat,line, re.IGNORECASE)
             for m in matches:
                 email = '%s@%s%s' % m
                 
                 res.append((name,'e',email))
                 
-    for line in f:
-        matches = re.findall(pat2,line, re.IGNORECASE)
+        matches = re.findall(pat6,line, re.IGNORECASE)
+        if matches:
+            line = re.sub(',','.',line.lower())
+            
+            matches = re.findall(pat,line, re.IGNORECASE)
+            for m in matches:
+                email = '%s@%s%s' % m
+                res.append((name,'e',email))
+            
+        matches = re.findall(pat7,line, re.IGNORECASE)
         for m in matches:
-            print 'email!'
-            email = '%s@%s%s' % m
-            email = re.sub(' dot ','.',email)
-            print email
+            email = '%s@%s' % (m[1],m[0])
+            
             res.append((name,'e',email))
+            
     
+        matches = re.findall(pat8,line, re.IGNORECASE)
+        for m in matches:
+            email = '%s@%s' % (m[0],m[1])
+            
+            res.append((name,'e',email))
+            
+#        matches = re.findall(pat9,line, re.IGNORECASE)
+#        for m in matches:
+#            email = '%s@%s.%s' % m
+#            email = re.sub(' ','.',email.lower())
+#            sys.stderr.write(email)
+#            res.append((name,'e',email))
+
+        matches = re.findall(pat10,line, re.IGNORECASE)
+        if matches:
+            line = re.sub(' dt ','.',line.lower())
+            line = re.sub(' dot ','.',line.lower())
+            
+            
+            matches = re.findall(pat,line, re.IGNORECASE)
+            for m in matches:
+                email = '%s@%s%s' % m
+             
+                res.append((name,'e',email))
+        
+        matches = re.findall(phone1,line, re.IGNORECASE)
+        for m in matches:
+            phone = '%s-%s-%s' % m
+            res.append((name,'p',phone))
+    
+    for result in res:
+       
+        if result[2].startswith('Server@'):
+            res.remove(result)
+        
     return res
 
 """
