@@ -16,6 +16,8 @@ import sys
 import getopt
 import os
 import math
+import collections
+from sets import Set
 
 class NaiveBayes:
 	class TrainSplit:
@@ -39,6 +41,12 @@ class NaiveBayes:
 		self.FILTER_STOP_WORDS = False
 		self.stopList = set(self.readFile('../data/english.stop'))
 		self.numFolds = 10
+		
+		self.counts = {'pos':collections.defaultdict(lambda: 0), 'neg': collections.defaultdict(lambda: 0)}
+		
+		self.docs_size = {'pos':0, 'neg': 0}
+		self.words_size = {'pos':0, 'neg': 0}
+		self.vocab = {'pos':Set([]), 'neg': Set([])}
 
 	#############################################################################
 	# TODO TODO TODO TODO TODO 
@@ -47,7 +55,29 @@ class NaiveBayes:
 		""" TODO
 			'words' is a list of words to classify. Return 'pos' or 'neg' classification.
 		"""
-		return 'pos'
+		
+		#print self.counts
+		print self.docs_size
+		print self.words_size
+
+		prior_pos_num = math.log(self.docs_size['pos'])
+		prior_neg_num = math.log(self.docs_size['neg'])
+		prior_denom = math.log(self.docs_size['pos'] + self.docs_size['neg'])
+		
+		potential_klasses = collections.Counter({'pos':prior_pos_num - prior_denom,'neg':prior_neg_num - prior_denom})
+		
+		for klass in potential_klasses:
+			denom = math.log(self.words_size[klass] + len(self.vocab[klass]))
+			
+			for word in words:
+				num = 1;
+				if word in self.counts[klass]:
+					num = self.counts[klass][word] + 1
+				potential_klasses[klass] -= math.log(denom)
+				potential_klasses[klass] += math.log(num)
+		
+		
+		return potential_klasses.most_common(1)[0][0]
 	
 
 	def addExample(self, klass, words):
@@ -59,6 +89,15 @@ class NaiveBayes:
 		 * in the NaiveBayes class.
 		 * Returns nothing
 		"""
+		
+		self.docs_size[klass] += 1
+		self.words_size[klass] += len(words)
+		
+		for word in words:
+			self.counts[klass][word] +=1
+			self.vocab[klass].add(word)
+				
+		
 		pass
 			
 
