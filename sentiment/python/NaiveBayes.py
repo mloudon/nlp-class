@@ -44,9 +44,9 @@ class NaiveBayes:
 		
 		self.counts = {'pos':collections.defaultdict(lambda: 0), 'neg': collections.defaultdict(lambda: 0)}
 		
-		self.docs_size = {'pos':0, 'neg': 0}
-		self.words_size = {'pos':0, 'neg': 0}
-		self.vocab = {'pos':Set([]), 'neg': Set([])}
+		self.docs_size = collections.Counter({'pos':0, 'neg': 0})
+		self.words_size = collections.Counter({'pos':0, 'neg': 0})
+		self.vocab = Set()
 
 	#############################################################################
 	# TODO TODO TODO TODO TODO 
@@ -56,10 +56,6 @@ class NaiveBayes:
 			'words' is a list of words to classify. Return 'pos' or 'neg' classification.
 		"""
 		
-		#print self.counts
-		print self.docs_size
-		print self.words_size
-
 		prior_pos_num = math.log(self.docs_size['pos'])
 		prior_neg_num = math.log(self.docs_size['neg'])
 		prior_denom = math.log(self.docs_size['pos'] + self.docs_size['neg'])
@@ -67,16 +63,18 @@ class NaiveBayes:
 		potential_klasses = collections.Counter({'pos':prior_pos_num - prior_denom,'neg':prior_neg_num - prior_denom})
 		
 		for klass in potential_klasses:
-			denom = math.log(self.words_size[klass] + len(self.vocab[klass]))
+			denom = math.log(self.words_size[klass] + len(self.vocab))
 			
 			for word in words:
 				num = 1;
+				
 				if word in self.counts[klass]:
 					num = self.counts[klass][word] + 1
-				potential_klasses[klass] -= math.log(denom)
+				
+				potential_klasses[klass] -= denom
 				potential_klasses[klass] += math.log(num)
-		
-		
+				
+
 		return potential_klasses.most_common(1)[0][0]
 	
 
@@ -95,7 +93,7 @@ class NaiveBayes:
 		
 		for word in words:
 			self.counts[klass][word] +=1
-			self.vocab[klass].add(word)
+			self.vocab.add(word)
 				
 		
 		pass
