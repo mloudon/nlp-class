@@ -36,12 +36,23 @@ class FeatureFactory:
         #features.append("prevLabel=" + previousLabel)
         #features.append("word=" + currentWord + ", prevLabel=" + previousLabel)
         
-        if (currentWord[0].isupper() and position>0):
+        if (currentWord[0].isupper()):
            features.append("case=Title, prevWord="+ previousWord)
+           
+           if position>0:
+               features.append("case=Title, word="+ currentWord)
+           
+           if (previousWord) and (previousWord[0].isupper()):
+               features.append("case=Title, prevLabel="+ previousLabel)
            
            if nextWord:
                features.append("case=Title, nextWord="+ nextWord)
-
+               
+        if (('-' in currentWord) and any(c.isupper() for c in currentWord)):
+            features.append("case=HypenTitle")
+            
+           
+                   
            
 	"""
         Warning: If you encounter "line search failure" error when
