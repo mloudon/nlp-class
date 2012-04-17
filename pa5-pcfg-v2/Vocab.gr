@@ -86,11 +86,11 @@
 1	EOS	?
 
 # Pauses.
-1	Misc	,
-1	Misc	...
-1	Misc	--
-1	Misc	;
-1	Misc	:
+1	PAUSE	,
+1	PAUSE	...
+1	PAUSE	--
+1	PAUSE	;
+1	PAUSE	:
 
 # Coordinating conjunctions.
 1	Misc	and
@@ -172,21 +172,21 @@
 1	AdjSuper	hardest
 
 # Plural nouns.
-1	Misc	coconuts
-1	Misc	halves
-1	Misc	snows
-1	Misc	mountains
-1	Misc	areas
-1	Misc	strangers
-1	Misc	inches
-1	Misc	snakes
-1	Misc	ants
-1	Misc	nights
+1	Nouns	coconuts
+1	Nouns	halves
+1	Nouns	snows
+1	Nouns	mountains
+1	Nouns	areas
+1	Nouns	strangers
+1	Nouns	inches
+1	Nouns	snakes
+1	Nouns	ants
+1	Nouns	nights
 
 # More proper nouns, not people.
 
-1	Misc	Camelot
-1	Misc	England
+1	ProperObj	Camelot
+1	ProperObj	England
 1	ProperObj	Holy Grail
 1	ProperObj	Round Table
 
@@ -195,21 +195,21 @@
 1	Misc	Saxons
 
 # Personal pronouns.
-1	Misc	he
-1	Misc	her
-1	Misc	him
-1	Misc	it
-1	Misc	one
-1	Misc	she
-1	Misc	them
-1	Misc	they
+1	Prp	he
+1	Prp	her
+1	Prp	him
+1	Prp	it
+1	Prp	one
+1	Prp	she
+1	Prp	them
+1	Prp	they
 
 
 # Possessive personal pronouns
-1	Misc	her
-1	Misc	his
-1	Misc	its
-1	Misc	their
+1	Prps	her
+1	Prps	his
+1	Prps	its
+1	Prps	their
 
 # Adverbs.
 1	Misc	again
@@ -232,17 +232,17 @@
 1	Misc	not
 
 # Verbs (base form).
-1	Misc	have
-1	Misc	speak
-1	Misc	cover
-1	Misc	be
-1	Misc	ride
-1	Misc	drink
-1	Misc	grow
-1	Misc	carry
-1	Misc	suggest
-1	Misc	migrate
-1	Misc	know
+1	Vb	have
+1	Vb	speak
+1	Vb	cover
+1	Vb	be
+1	Vb	ride
+1	Vb	drink
+1	Vb	grow
+1	Vb	carry
+1	Vb	suggest
+1	Vb	migrate
+1	Vb	know
 
 # Verbs (past tense).
 1	Vbd	had
@@ -285,25 +285,25 @@
 1	Vbn	known
 
 # More third person singular verbs.
-1	Misc	speaks
-1	Misc	grows
-1	Misc	goes
-1	Misc	migrates
-1	Misc	suggests
-1	Misc	knows
+1	Vbz	speaks
+1	Vbz	grows
+1	Vbz	goes
+1	Vbz	migrates
+1	Vbz	suggests
+1	Vbz	knows
 
 # Verbs (present, plural, third person).
-1	Misc	have
-1	Misc	speak
-1	Misc	cover
-1	Misc	are
-1	Misc	ride
-1	Misc	drink
-1	Misc	grow
-1	Misc	carry
-1	Misc	suggest
-1	Misc	migrate
-1	Misc	know
+1	Vbzs	have
+1	Vbzs	speak
+1	Vbzs	cover
+1	Vbzs	are
+1	Vbzs	ride
+1	Vbzs	drink
+1	Vbzs	grow
+1	Vbzs	carry
+1	Vbzs	suggest
+1	Vbzs	migrate
+1	Vbzs	know
 
 # Wh-determiners.
 1	Misc	that

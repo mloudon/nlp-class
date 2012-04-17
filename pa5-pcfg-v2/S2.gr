@@ -12,6 +12,13 @@
 1	SENTENCE	_AdjComp
 1	SENTENCE	_AdjSuper
 1	SENTENCE	_ProperObj
+1	SENTENCE	_PAUSE
+1	SENTENCE	_Nouns
+1	SENTENCE	_Vb
+1	SENTENCE	_Vbz
+1	SENTENCE	_Vbzs
+1	SENTENCE	_Prp
+1	SENTENCE	_Prps
 
 1	_Det	Det
 1	_Det	Det _Det
@@ -27,6 +34,13 @@
 1	_Det	Det _AdjComp
 1	_Det	Det _AdjSuper
 1	_Det	Det _ProperObj
+1	_Det	Det _PAUSE
+1	_Det	Det _Nouns
+1	_Det	Det _Vb
+1	_Det	Det _Vbz
+1	_Det	Det _Vbzs
+1	_Det	Det _Prp
+1	_Det	Det _Prps
 
 1	_Misc	Misc
 1	_Misc	Misc _Det
@@ -42,6 +56,13 @@
 1	_Misc	Misc _AdjComp
 1	_Misc	Misc _AdjSuper
 1	_Misc	Misc _ProperObj
+1	_Misc	Misc _PAUSE
+1	_Misc	Misc _Nouns
+1	_Misc	Misc _Vb
+1	_Misc	Misc _Vbz
+1	_Misc	Misc _Vbzs
+1	_Misc	Misc _Prp
+1	_Misc	Misc _Prps
 
 1	_Noun	Noun
 1	_Noun	Noun _Det
@@ -57,6 +78,13 @@
 1	_Noun	Noun _AdjComp
 1	_Noun	Noun _AdjSuper
 1	_Noun	Noun _ProperObj
+1	_Noun	Noun _PAUSE
+1	_Noun	Noun _Nouns
+1	_Noun	Noun _Vb
+1	_Noun	Noun _Vbz
+1	_Noun	Noun _Vbzs
+1	_Noun	Noun _Prp
+1	_Noun	Noun _Prps
 
 
 1	_Prep	Prep
@@ -73,6 +101,13 @@
 1	_Prep	Prep _AdjComp
 1	_Prep	Prep _AdjSuper
 1	_Prep	Prep _ProperObj
+1	_Prep	Prep _PAUSE
+1	_Prep	Prep _Nouns
+1	_Prep	Prep _Vb
+1	_Prep	Prep _Vbz
+1	_Prep	Prep _Vbzs
+1	_Prep	Prep _Prp
+1	_Prep	Prep _Prps
 
 1	_Proper	Proper
 1	_Proper	Proper _Det
@@ -88,6 +123,13 @@
 1	_Proper	Proper _AdjComp
 1	_Proper	Proper _AdjSuper
 1	_Proper	Proper _ProperObj
+1	_Proper	Proper _PAUSE
+1	_Proper	Proper _Nouns
+1	_Proper	Proper _Vb
+1	_Proper	Proper _Vbz
+1	_Proper	Proper _Vbzs
+1	_Proper	Proper _Prp
+1	_Proper	Proper _Prps
 
 1	_VerbT	VerbT
 1	_VerbT	VerbT _Det
@@ -103,6 +145,13 @@
 1	_VerbT	VerbT _AdjComp
 1	_VerbT	VerbT _AdjSuper
 1	_VerbT	VerbT _ProperObj
+1	_VerbT	VerbT _PAUSE
+1	_VerbT	VerbT _Nouns
+1	_VerbT	VerbT _Vb
+1	_VerbT	VerbT _Vbz
+1	_VerbT	VerbT _Vbzs
+1	_VerbT	VerbT _Prp
+1	_VerbT	VerbT _Prps
 
 
 1	_Vbd	Vbd
@@ -118,7 +167,13 @@
 1	_Vbd	Vbd _AdjComp
 1	_Vbd	Vbd _AdjSuper
 1	_Vbd	Vbd _ProperObj
-
+1	_Vbd	Vbd _PAUSE
+1	_Vbd	Vbd _Nouns
+1	_Vbd	Vbd _Vb
+1	_Vbd	Vbd _Vbz
+1	_Vbd	Vbd _Vbzs
+1	_Vbd	Vbd _Prp
+1	_Vbd	Vbd _Prps
 
 1	_Vbn	Vbn
 1	_Vbn	Vbn _Det
@@ -133,6 +188,13 @@
 1	_Vbn	Vbn _AdjComp
 1	_Vbn	Vbn _AdjSuper
 1	_Vbn	Vbn _ProperObj
+1	_Vbn	Vbn _PAUSE
+1	_Vbn	Vbn _Nouns
+1	_Vbn	Vbn _Vb
+1	_Vbn	Vbn _Vbz
+1	_Vbn	Vbn _Vbzs
+1	_Vbn	Vbn _Prp
+1	_Vbn	Vbn _Prps
 
 1	_Vbg	Vbg
 1	_Vbg	Vbg _Det
@@ -146,7 +208,14 @@
 1	_Vbg	Vbg _Adj
 1	_Vbg	Vbg _AdjComp
 1	_Vbg	Vbg _AdjSuper
-1	_Vbg	_Vbg _ProperObj
+1	_Vbg	Vbg _ProperObj
+1	_Vbg	Vbg _PAUSE
+1	_Vbg	Vbg _Nouns
+1	_Vbg	Vbg _Vb
+1	_Vbg	Vbg _Vbz
+1	_Vbg	Vbg _Vbzs
+1	_Vbg	Vbg _Prp
+1	_Vbg	Vbg _Prps
 
 1	_Adj	Adj
 1	_Adj	Adj _Det
@@ -161,6 +230,13 @@
 1	_Adj	Adj _AdjComp
 1	_Adj	Adj _AdjSuper
 1	_Adj	Adj _ProperObj
+1	_Adj	Adj _PAUSE
+1	_Adj	Adj _Nouns
+1	_Adj	Adj _Vb
+1	_Adj	Adj _Vbz
+1	_Adj	Adj _Vbzs
+1	_Adj	Adj _Prp
+1	_Adj	Adj _Prps
 
 1	_AdjComp	AdjComp
 1	_AdjComp	AdjComp _Det
@@ -174,7 +250,14 @@
 1	_AdjComp	AdjComp _Adj
 1	_AdjComp	AdjComp _AdjComp
 1	_AdjComp	AdjComp _AdjSuper
-1	_AdjComp	_AdjComp _ProperObj
+1	_AdjComp	AdjComp _ProperObj
+1	_AdjComp	AdjComp _PAUSE
+1	_AdjComp	AdjComp _Nouns
+1	_AdjComp	AdjComp _Vb
+1	_AdjComp	AdjComp _Vbz
+1	_AdjComp	AdjComp _Vbzs
+1	_AdjComp	AdjComp _Prp
+1	_AdjComp	AdjComp _Prps
 
 1	_AdjSuper	AdjSuper
 1	_AdjSuper	AdjSuper _Det
@@ -189,6 +272,14 @@
 1	_AdjSuper	AdjSuper _AdjComp
 1	_AdjSuper	AdjSuper _AdjSuper
 1	_AdjSuper	AdjSuper _ProperObj
+1	_AdjSuper	AdjSuper _PAUSE
+1	_AdjSuper	AdjSuper _Nouns
+1	_AdjSuper	AdjSuper _Vb
+1	_AdjSuper	AdjSuper _Vbz
+1	_AdjSuper	AdjSuper _Vbzs
+1	_AdjSuper	AdjSuper _Prp
+1	_AdjSuper	AdjSuper _Prps
+
 
 1	_ProperObj	ProperObj
 1	_ProperObj	ProperObj _Det
@@ -204,3 +295,167 @@
 1	_ProperObj	ProperObj _AdjComp
 1	_ProperObj	ProperObj _AdjSuper
 1	_ProperObj	ProperObj _ProperObj
+1	_ProperObj	ProperObj _PAUSE
+1	_ProperObj	ProperObj _Nouns
+1	_ProperObj	ProperObj _Vb
+1	_ProperObj	ProperObj _Vbz
+1	_ProperObj	ProperObj _Vbzs
+1	_ProperObj	ProperObj _Prp
+1	_ProperObj	ProperObj _Prps
+
+1	_PAUSE	PAUSE
+1	_PAUSE	PAUSE _Det
+1	_PAUSE	PAUSE _Misc
+1	_PAUSE	PAUSE _Noun
+1	_PAUSE	PAUSE _Prep
+1	_PAUSE	PAUSE _Proper
+1	_PAUSE	PAUSE _VerbT
+1	_PAUSE	PAUSE _Vbd
+1	_PAUSE	PAUSE _Vbg
+1	_PAUSE	PAUSE _Vbn
+1	_PAUSE	PAUSE _Adj
+1	_PAUSE	PAUSE _AdjComp
+1	_PAUSE	PAUSE _AdjSuper
+1	_PAUSE	PAUSE _ProperObj
+1	_PAUSE	PAUSE _PAUSE
+1	_PAUSE	PAUSE _Nouns
+1	_PAUSE	PAUSE _Vb
+1	_PAUSE	PAUSE _Vbz
+1	_PAUSE	PAUSE _Vbzs
+1	_PAUSE	PAUSE _Prp
+1	_PAUSE	PAUSE _Prps
+
+1	_Nouns	Nouns
+1	_Nouns	Nouns _Det
+1	_Nouns	Nouns _Misc
+1	_Nouns	Nouns _Noun
+1	_Nouns	Nouns _Prep
+1	_Nouns	Nouns _Proper
+1	_Nouns	Nouns _VerbT
+1	_Nouns	Nouns _Vbd
+1	_Nouns	Nouns _Vbg
+1	_Nouns	Nouns _Vbn
+1	_Nouns	Nouns _Adj
+1	_Nouns	Nouns _AdjComp
+1	_Nouns	Nouns _AdjSuper
+1	_Nouns	Nouns _ProperObj
+1	_Nouns	Nouns _PAUSE
+1	_Nouns	Nouns _Nouns
+1	_Nouns	Nouns _Vb
+1	_Nouns	Nouns _Vbz
+1	_Nouns	Nouns _Vbzs
+1	_Nouns	Nouns _Prp
+1	_Nouns	Nouns _Prps
+
+1	_Vb	Vb
+1	_Vb	Vb _Det
+1	_Vb	Vb _Misc
+1	_Vb	Vb _Noun
+1	_Vb	Vb _Prep
+1	_Vb	Vb _Proper
+1	_Vb	Vb _VerbT
+1	_Vb	Vb _Vbd
+1	_Vb	Vb _Vbg
+1	_Vb	Vb _Vbn
+1	_Vb	Vb _Adj
+1	_Vb	Vb _AdjComp
+1	_Vb	Vb _AdjSuper
+1	_Vb	Vb _ProperObj
+1	_Vb	Vb _PAUSE
+1	_Vb	Vb _Nouns
+1	_Vb	Vb _Vb
+1	_Vb	Vb _Vbz
+1	_Vb	Vb _Vbzs
+1	_Vb	Vb _Prp
+1	_Vb	Vb _Prps
+
+1	_Vbz	Vbz
+1	_Vbz	Vbz _Det
+1	_Vbz	Vbz _Misc
+1	_Vbz	Vbz _Noun
+1	_Vbz	Vbz _Prep
+1	_Vbz	Vbz _Proper
+1	_Vbz	Vbz _VerbT
+1	_Vbz	Vbz _Vbd
+1	_Vbz	Vbz _Vbg
+1	_Vbz	Vbz _Vbn
+1	_Vbz	Vbz _Adj
+1	_Vbz	Vbz _AdjComp
+1	_Vbz	Vbz _AdjSuper
+1	_Vbz	Vbz _ProperObj
+1	_Vbz	Vbz _PAUSE
+1	_Vbz	Vbz _Nouns
+1	_Vbz	Vbz _Vb
+1	_Vbz	Vbz _Vbz
+1	_Vbz	Vbz _Vbzs
+1	_Vbz	Vbz _Prp
+1	_Vbz	Vbz _Prps
+
+
+1	_Vbzs	Vbzs
+1	_Vbzs	Vbzs _Det
+1	_Vbzs	Vbzs _Misc
+1	_Vbzs	Vbzs _Noun
+1	_Vbzs	Vbzs _Prep
+1	_Vbzs	Vbzs _Proper
+1	_Vbzs	Vbzs _VerbT
+1	_Vbzs	Vbzs _Vbd
+1	_Vbzs	Vbzs _Vbg
+1	_Vbzs	Vbzs _Vbn
+1	_Vbzs	Vbzs _Adj
+1	_Vbzs	Vbzs _AdjComp
+1	_Vbzs	Vbzs _AdjSuper
+1	_Vbzs	Vbzs _ProperObj
+1	_Vbzs	Vbzs _PAUSE
+1	_Vbzs	Vbzs _Nouns
+1	_Vbzs	Vbzs _Vb
+1	_Vbzs	Vbzs _Vbz
+1	_Vbzs	Vbzs _Vbzs
+1	_Vbzs	Vbzs _Prp
+1	_Vbzs	Vbzs _Prps
+
+1	_Prp	Prp
+1	_Prp	Prp _Det
+1	_Prp	Prp _Misc
+1	_Prp	Prp _Noun
+1	_Prp	Prp _Prep
+1	_Prp	Prp _Proper
+1	_Prp	Prp _VerbT
+1	_Prp	Prp _Vbd
+1	_Prp	Prp _Vbg
+1	_Prp	Prp _Vbn
+1	_Prp	Prp _Adj
+1	_Prp	Prp _AdjComp
+1	_Prp	Prp _AdjSuper
+1	_Prp	Prp _ProperObj
+1	_Prp	Prp _PAUSE
+1	_Prp	Prp _Nouns
+1	_Prp	Prp _Vb
+1	_Prp	Prp _Vbz
+1	_Prp	Prp _Vbzs
+1	_Prp	Prp _Prp
+1	_Prp	Prp _Prps
+
+1	_Prps	Prps
+1	_Prps	Prps _Det
+1	_Prps	Prps _Misc
+1	_Prps	Prps _Noun
+1	_Prps	Prps _Prep
+1	_Prps	Prps _Proper
+1	_Prps	Prps _VerbT
+1	_Prps	Prps _Vbd
+1	_Prps	Prps _Vbg
+1	_Prps	Prps _Vbn
+1	_Prps	Prps _Adj
+1	_Prps	Prps _AdjComp
+1	_Prps	Prps _AdjSuper
+1	_Prps	Prps _ProperObj
+1	_Prps	Prps _PAUSE
+1	_Prps	Prps _Nouns
+1	_Prps	Prps _Vb
+1	_Prps	Prps _Vbz
+1	_Prps	Prps _Vbzs
+1	_Prps	Prps _Prp
+1	_Prps	Prps _Prps
+
+
