@@ -1,46 +1,31 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-80	START	S1
-20	START	S2
+99	START	S1
+1	START	S2
 
 # This is a very, very, very simple grammar to get you started.
 
-# Noun, Proper, Det, Prep, VerbT (third person singular present)
-# Arthur is the king
-# Arthur rides the horse near the castle
-
 1	S1	NP VP EOS
 
-1	VP	Vbar NP
+1	S1	VP EOS
 
-1	Vbar	VerbT
+1	VP	VerbT NP
+
+1	VP	VerbT Adj
+
+1	VP	Vbg PP VerbT Adj
+
 
 20	NP	Det Nbar
+15	NP	Nbar
 1	NP	Proper
+1	NP	ProperObj
 
 20	Nbar	Noun
 20	Nbar	Nouns
-10	Nbar	Adj Nbar
 1	Nbar	Nbar PP
-1	Nbar	Det ProperObj
 
 1	PP	Prep NP
 
-# the Holy Grail was covered by a yellow fruit
 
-1	Vbar	Vbn Vbd	PP 
-
-1	Vbar	Vbg	PP
-
-1	Vbar	Vbg	to
-
-1	S1	Do Nbar Vb
-
-1	Vbar 	Vb
-1	Vbar 	Prp Vbar
-1	Vbar 	Prps Vbar
-1	Vbar 	Vbz
-1	Vbar 	Vbzs
-
-1	Vbar 	Vb
