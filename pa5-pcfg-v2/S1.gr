@@ -10,9 +10,11 @@
 # Arthur is the king
 # Arthur rides the horse near the castle
 
-1	S1	NP VP .
+1	S1	NP VP EOS
 
-1	VP	VerbT NP
+1	VP	Vbar NP
+
+1	Vbar	VerbT
 
 20	NP	Det Nbar
 1	NP	Proper
@@ -26,4 +28,8 @@
 
 # the Holy Grail was covered by a yellow fruit
 
-1	VP	Vbn Vbd	Prep
+1	Vbar	Vbn Vbd	Prep 
+
+1	Vbar	Vbg	Prep
+
+1	Vbar	Vbg	to

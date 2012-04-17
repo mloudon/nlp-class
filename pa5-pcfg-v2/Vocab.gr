@@ -81,9 +81,9 @@
 1	VerbT	rides
 
 # End-of-sentence.
-1	Misc	!
-1	Misc	.
-1	Misc	?
+1	EOS	!
+1	EOS	.
+1	EOS	?
 
 # Pauses.
 1	Misc	,
