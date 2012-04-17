@@ -1,70 +1,68 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-60	START	S1
-40	START	S2
+70	START	S1
+#30	START	S2
 
 # This is a very, very, very simple grammar to get you started.
 
 1	S1	NP VP EOS
-
 1	S1	VP EOS
 
-1	VP	VerbT NP
-
-1	VP	VerbT Adj
-
 1	VP	Vbg PP VerbT Adj
-
-1	VP	NP Vb
-
-1	VP	NP Vbz
-
 
 
 1	VP	VerbT
 1	VP	Vb
 1	VP	Vbz
 1	VP	Vbzs
+1	VP	Vbg
+1	VP	Vbd
 
-
+5	VP	VP NP
+5	VP	NP VP
+5	VP	VP VP
 1	VP	Prp VP
 1	VP	VP PP
 1	VP	VP Adv
 
+1	VP	Vb Vbn
+1	VP	Vb Vbg
+1	VP	Vb Vbd
+1	VP	Vbd Vbd
+
 1	VP	Vb Prp Vb
-
 1	VP	Prp Vbzs
-
 1	VP	Vbzs Prp VP
-
 1	VP	Vbg NP VP
 
-5	VP	VP NP
 
-5	VP	Modal Vb Vbn
+5	VP	Modal VP
 
-5	VP	Modal Vb Vbn
+1	VP	NP DoDoes
+
+1	VP	neither VP nor VP
+1	VP	neither NP nor VP
+1	VP	either VP or VP
+1	VP	either NP or VP
+
 
 1	S1	QuestSentence ?
-
 1	Quest	DoDoes VP
-
 1	Quest	DoDoes NP VP
-
 1	Quest	VP
-
 1	QuestSentence	Quest
-
 1	QuestSentence	who Quest
-
 1	QuestSentence	what Quest
-
 1	QuestSentence	WhAdv Quest
 
 20	NP	Det Nbar
 15	NP	Nbar
 1	NP	Adj Nbar
+1	NP	Proper
+1	NP	ProperObj
+1	NP	neither NP nor NP
+1	NP	either NP or NP
 
 20	Nbar	Noun
 10	Nbar	Nouns
@@ -73,7 +71,9 @@
 1	Nbar	Proper
 1	Nbar	ProperObj
 1	Nbar	Nbar PP
+1	Nbar	Adj Nbar
 
 1	PP	Prep NP
+1	PP	Prep Prp
 
 
