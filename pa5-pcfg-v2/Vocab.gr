@@ -222,8 +222,8 @@
 1	Misc	unfortunately
 
 # 'do'/'does'
-1	Misc	do
-1	Misc	does
+1	DoDoes	do
+1	DoDoes	does
 
 # 'to'
 1	Prep	to

@@ -16,6 +16,10 @@
 
 1	VP	Vbg PP VerbT Adj
 
+1	VP	NP Vb
+
+1	VP	DoDoes VP
+
 
 20	NP	Det Nbar
 15	NP	Nbar
