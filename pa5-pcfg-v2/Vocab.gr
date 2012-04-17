@@ -81,9 +81,9 @@
 1	VerbT	rides
 
 # End-of-sentence.
-1	Misc	!
-1	Misc	.
-1	Misc	?
+1	EOS	!
+1	EOS	.
+1	EOS	?
 
 # Pauses.
 1	Misc	,
@@ -133,43 +133,43 @@
 
 
 # Adjectives.
-1	Misc	bloody
-1	Misc	weary
-1	Misc	unable
-1	Misc	trusty
-1	Misc	further
-1	Misc	sacred
-1	Misc	tropical
-1	Misc	indigenous
-1	Misc	temperate
-1	Misc	hot
-1	Misc	lucky
-1	Misc	simple
-1	Misc	tiny
-1	Misc	hard	
-1	Misc	sensational
-1	Misc	comparable
-1	Misc	angolian
-1	Misc	yellow
-1	Misc	plodding
+1	Adj	bloody
+1	Adj	weary
+1	Adj	unable
+1	Adj	trusty
+1	Adj	further
+1	Adj	sacred
+1	Adj	tropical
+1	Adj	indigenous
+1	Adj	temperate
+1	Adj	hot
+1	Adj	lucky
+1	Adj	simple
+1	Adj	tiny
+1	Adj	hard	
+1	Adj	sensational
+1	Adj	comparable
+1	Adj	angolian
+1	Adj	yellow
+1	Adj	plodding
 
 # Comparative adjectives.
-1	Misc	bloodier
-1	Misc	wearier
-1	Misc	trustier
-1	Misc	hotter
-1	Misc	simpler
-1	Misc	tinier
-1	Misc	harder
+1	AdjComp	bloodier
+1	AdjComp	wearier
+1	AdjComp	trustier
+1	AdjComp	hotter
+1	AdjComp	simpler
+1	AdjComp	tinier
+1	AdjComp	harder
 
 # Superlative adjectives.
-1	Misc	bloodiest
-1	Misc	weariest
-1	Misc	trustiest
-1	Misc	hottest
-1	Misc	simplest
-1	Misc	tiniest
-1	Misc	hardest
+1	AdjSuper	bloodiest
+1	AdjSuper	weariest
+1	AdjSuper	trustiest
+1	AdjSuper	hottest
+1	AdjSuper	simplest
+1	AdjSuper	tiniest
+1	AdjSuper	hardest
 
 # Plural nouns.
 1	Misc	coconuts
@@ -245,44 +245,44 @@
 1	Misc	know
 
 # Verbs (past tense).
-1	Misc	had
-1	Misc	spoke
-1	Misc	covered
-1	Misc	was
-1	Misc	were
-1	Misc	rode
-1	Misc	drank
-1	Misc	grew
-1	Misc	carried
-1	Misc	suggested
-1	Misc	migrated
-1	Misc	knew
+1	Vbd	had
+1	Vbd	spoke
+1	Vbd	covered
+1	Vbd	was
+1	Vbd	were
+1	Vbd	rode
+1	Vbd	drank
+1	Vbd	grew
+1	Vbd	carried
+1	Vbd	suggested
+1	Vbd	migrated
+1	Vbd	knew
 
 # Verbs (present participles).
-1	Misc	having
-1	Misc	speaking
-1	Misc	covering
-1	Misc	being
-1	Misc	riding
-1	Misc	drinking
-1	Misc	growing
-1	Misc	carrying
-1	Misc	suggesting
-1	Misc	migrating
-1	Misc	knowing
+1	Vbg	having
+1	Vbg	speaking
+1	Vbg	covering
+1	Vbg	being
+1	Vbg	riding
+1	Vbg	drinking
+1	Vbg	growing
+1	Vbg	carrying
+1	Vbg	suggesting
+1	Vbg	migrating
+1	Vbg	knowing
 
 # Verbs (past participle).
-1	Misc	had
-1	Misc	spoken
-1	Misc	covered
-1	Misc	been
-1	Misc	ridden
-1	Misc	drunk
-1	Misc	grown
-1	Misc	carried
-1	Misc	suggested
-1	Misc	migrated
-1	Misc	known
+1	Vbn	had
+1	Vbn	spoken
+1	Vbn	covered
+1	Vbn	been
+1	Vbn	ridden
+1	Vbn	drunk
+1	Vbn	grown
+1	Vbn	carried
+1	Vbn	suggested
+1	Vbn	migrated
+1	Vbn	known
 
 # More third person singular verbs.
 1	Misc	speaks

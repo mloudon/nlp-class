@@ -6,7 +6,11 @@
 
 # This is a very, very, very simple grammar to get you started.
 
-1	S1	NP VP .
+# Noun, Proper, Det, Prep, VerbT (third person singular present)
+# Arthur is the king
+# Arthur rides the horse near the castle
+
+1	S1	NP VP EOS
 
 1	VP	VerbT NP
 
@@ -14,6 +18,11 @@
 1	NP	Proper
 
 20	Nbar	Noun
+10	Nbar	Adj Nbar
 1	Nbar	Nbar PP
 
 1	PP	Prep NP
+
+# the Holy Grail was covered by a yellow fruit
+
+1	VP	Vbn Vbd	Prep

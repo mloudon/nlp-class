@@ -5,6 +5,13 @@
 1	S2	_Prep
 1	S2	_Proper
 1	S2	_VerbT
+1	S2	_Vbd
+1	S2	_Vbg
+1	S2	_Vbn
+1	S2	_Adj
+1	S2	_AdjComp
+1	S2	_AdjSuper
+
 1	_Det	Det
 1	_Det	Det _Det
 1	_Det	Det _Misc
@@ -12,6 +19,13 @@
 1	_Det	Det _Prep
 1	_Det	Det _Proper
 1	_Det	Det _VerbT
+1	_Det	Det _Vbd
+1	_Det	Det _Vbg
+1	_Det	Det _Vbn
+1	_Det	Det _Adj
+1	_Det	Det _AdjComp
+1	_Det	Det _AdjSuper
+
 1	_Misc	Misc
 1	_Misc	Misc _Det
 1	_Misc	Misc _Misc
@@ -19,6 +33,13 @@
 1	_Misc	Misc _Prep
 1	_Misc	Misc _Proper
 1	_Misc	Misc _VerbT
+1	_Misc	Misc _Vbd
+1	_Misc	Misc _Vbg
+1	_Misc	Misc _Vbn
+1	_Misc	Misc _Adj
+1	_Misc	Misc _AdjComp
+1	_Misc	Misc _AdjSuper
+
 1	_Noun	Noun
 1	_Noun	Noun _Det
 1	_Noun	Noun _Misc
@@ -26,6 +47,13 @@
 1	_Noun	Noun _Prep
 1	_Noun	Noun _Proper
 1	_Noun	Noun _VerbT
+1	_Noun	Noun _Vbd
+1	_Noun	Noun _Vbg
+1	_Noun	Noun _Vbn
+1	_Noun	Noun _Adj
+1	_Noun	Noun _AdjComp
+1	_Noun	Noun _AdjSuper
+
 1	_Prep	Prep
 1	_Prep	Prep _Det
 1	_Prep	Prep _Misc
@@ -33,6 +61,13 @@
 1	_Prep	Prep _Prep
 1	_Prep	Prep _Proper
 1	_Prep	Prep _VerbT
+1	_Prep	Prep _Vbd
+1	_Prep	Prep _Vbg
+1	_Prep	Prep _Vbn
+1	_Prep	Prep _Adj
+1	_Prep	Prep _AdjComp
+1	_Prep	Prep _AdjSuper
+
 1	_Proper	Proper
 1	_Proper	Proper _Det
 1	_Proper	Proper _Misc
@@ -40,6 +75,13 @@
 1	_Proper	Proper _Prep
 1	_Proper	Proper _Proper
 1	_Proper	Proper _VerbT
+1	_Proper	Proper _Vbd
+1	_Proper	Proper _Vbg
+1	_Proper	Proper _Vbn
+1	_Proper	Proper _Adj
+1	_Proper	Proper _AdjComp
+1	_Proper	Proper _AdjSuper
+
 1	_VerbT	VerbT
 1	_VerbT	VerbT _Det
 1	_VerbT	VerbT _Misc
@@ -47,3 +89,88 @@
 1	_VerbT	VerbT _Prep
 1	_VerbT	VerbT _Proper
 1	_VerbT	VerbT _VerbT
+1	_VerbT	VerbT _Vbd
+1	_VerbT	VerbT _Vbg
+1	_VerbT	VerbT _Vbn
+1	_VerbT	VerbT _Adj
+1	_VerbT	VerbT _AdjComp
+1	_VerbT	VerbT _AdjSuper
+
+1	_Vbd	Vbd
+1	_Vbd	Vbd _Det
+1	_Vbd	Vbd _Misc
+1	_Vbd	Vbd _Noun
+1	_Vbd	Vbd _Prep
+1	_Vbd	Vbd _Proper
+1	_Vbd	Vbd _Vbd
+1	_Vbd	Vbd _Vbg
+1	_Vbd	Vbd _Vbn
+1	_Vbd	Vbd _Adj
+1	_Vbd	Vbd _AdjComp
+1	_Vbd	Vbd _AdjSuper
+
+
+1	_Vbn	Vbn
+1	_Vbn	Vbn _Det
+1	_Vbn	Vbn _Misc
+1	_Vbn	Vbn _Noun
+1	_Vbn	Vbn _Prep
+1	_Vbn	Vbn _Proper
+1	_Vbn	Vbn _Vbd
+1	_Vbn	Vbn _Vbg
+1	_Vbn	Vbn _Vbn
+1	_Vbn	Vbn _Adj
+1	_Vbn	Vbn _AdjComp
+1	_Vbn	Vbn _AdjSuper
+
+1	_Vbg	Vbg
+1	_Vbg	Vbg _Det
+1	_Vbg	Vbg _Misc
+1	_Vbg	Vbg _Noun
+1	_Vbg	Vbg _Prep
+1	_Vbg	Vbg _Proper
+1	_Vbg	Vbg _Vbd
+1	_Vbg	Vbg _Vbg
+1	_Vbg	Vbg _Vbn
+1	_Vbg	Vbg _Adj
+1	_Vbg	Vbg _AdjComp
+1	_Vbg	Vbg _AdjSuper
+
+1	_Adj	Adj
+1	_Adj	Adj _Det
+1	_Adj	Adj _Misc
+1	_Adj	Adj _Noun
+1	_Adj	Adj _Prep
+1	_Adj	Adj _Proper
+1	_Adj	Adj _Vbd
+1	_Adj	Adj _Vbg
+1	_Adj	Adj _Vbn
+1	_Adj	Adj _Adj
+1	_Adj	Adj _AdjComp
+1	_Adj	Adj _AdjSuper
+
+1	_AdjComp	AdjComp
+1	_AdjComp	AdjComp _Det
+1	_AdjComp	AdjComp _Misc
+1	_AdjComp	AdjComp _Noun
+1	_AdjComp	AdjComp _Prep
+1	_AdjComp	AdjComp _Proper
+1	_AdjComp	AdjComp _Vbd
+1	_AdjComp	AdjComp _Vbg
+1	_AdjComp	AdjComp _Vbn
+1	_AdjComp	AdjComp _Adj
+1	_AdjComp	AdjComp _AdjComp
+1	_AdjComp	AdjComp _AdjSuper
+
+1	_AdjSuper	AdjSuper
+1	_AdjSuper	AdjSuper _Det
+1	_AdjSuper	AdjSuper _Misc
+1	_AdjSuper	AdjSuper _Noun
+1	_AdjSuper	AdjSuper _Prep
+1	_AdjSuper	AdjSuper _Proper
+1	_AdjSuper	AdjSuper _Vbd
+1	_AdjSuper	AdjSuper _Vbg
+1	_AdjSuper	AdjSuper _Vbn
+1	_AdjSuper	AdjSuper _Adj
+1	_AdjSuper	AdjSuper _AdjComp
+1	_AdjSuper	AdjSuper _AdjSuper

@@ -51,6 +51,9 @@ class FeatureFactory:
         if (('-' in currentWord) and any(c.isupper() for c in currentWord)):
             features.append("case=HypenTitle")
             
+        if (any(c in ['1','2','3','4','5','6','7','8','9','0'] for c in currentWord)):
+            features.append("case=ContainsNumber")
+            
            
                    
            
