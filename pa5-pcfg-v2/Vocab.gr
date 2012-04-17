@@ -102,12 +102,12 @@
 1	Misc	so
 
 # Numbers.
-1	Misc	eight
-1	Misc	five
+1	CD	eight
+1	CD	five
 1	Misc	one
-1	Misc	5.5
-1	Misc	sixty
-1	Misc	5,000
+1	CD	5.5
+1	CD	sixty
+1	CD	5,000
 
 # Expletive.
 1	Misc	there
@@ -120,16 +120,16 @@
 1	Misc	if
 
 # Modals.
-1	Misc	can
-1	Misc	could
-1	Misc	may
-1	Misc	might
-1	Misc	must
-1	Misc	ought
-1	Misc	shall
-1	Misc	should
-1	Misc	will
-1	Misc	would
+1	Modal	can
+1	Modal	could
+1	Modal	may
+1	Modal	might
+1	Modal	must
+1	Modal	ought
+1	Modal	shall
+1	Modal	should
+1	Modal	will
+1	Modal	would
 
 
 # Adjectives.

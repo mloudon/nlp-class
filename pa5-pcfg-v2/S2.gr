@@ -21,6 +21,9 @@
 1	SENTENCE	_Prps
 1	SENTENCE	_DoDoes
 1	SENTENCE	_WhAdv
+1	SENTENCE	_CD
+1	SENTENCE	_Modal
+
 
 
 1	_Det	Det
@@ -46,6 +49,9 @@
 1	_Det	Det _Prps
 1	_Det	Det _DoDoes
 1	_Det	Det _WhAdv
+1	_Det	Det _CD
+1	_Det	Det _Modal
+
 
 1	_Misc	Misc
 1	_Misc	Misc _Det
@@ -70,6 +76,9 @@
 1	_Misc	Misc _Prps
 1	_Misc	Misc _DoDoes
 1	_Misc	Misc _WhAdv
+1	_Misc	Misc _CD
+1	_Misc	Misc _Modal
+
 
 1	_Noun	Noun
 1	_Noun	Noun _Det
@@ -94,6 +103,9 @@
 1	_Noun	Noun _Prps
 1	_Noun	Noun _DoDoes
 1	_Noun	Noun _WhAdv
+1	_Noun	Noun _CD
+1	_Noun	Noun _Modal
+
 
 
 1	_Prep	Prep
@@ -119,6 +131,9 @@
 1	_Prep	Prep _Prps
 1	_Prep	Prep _DoDoes
 1	_Prep	Prep _WhAdv
+1	_Prep	Prep _CD
+1	_Prep	Prep _Modal
+
 
 1	_Proper	Proper
 1	_Proper	Proper _Det
@@ -143,6 +158,9 @@
 1	_Proper	Proper _Prps
 1	_Proper	Proper _DoDoes
 1	_Proper	Proper _WhAdv
+1	_Proper	Proper _CD
+1	_Proper	Proper _Modal
+
 
 1	_VerbT	VerbT
 1	_VerbT	VerbT _Det
@@ -167,6 +185,9 @@
 1	_VerbT	VerbT _Prps
 1	_VerbT	VerbT _DoDoes
 1	_VerbT	VerbT _WhAdv
+1	_VerbT	VerbT _CD
+1	_VerbT	VerbT _Modal
+
 
 
 1	_Vbd	Vbd
@@ -191,6 +212,9 @@
 1	_Vbd	Vbd _Prps
 1	_Vbd	Vbd _DoDoes
 1	_Vbd	Vbd _WhAdv
+1	_Vbd	Vbd _CD
+1	_Vbd	Vbd _Modal
+
 
 1	_Vbn	Vbn
 1	_Vbn	Vbn _Det
@@ -214,6 +238,9 @@
 1	_Vbn	Vbn _Prps
 1	_Vbn	Vbn _DoDoes
 1	_Vbn	Vbn _WhAdv
+1	_Vbn	Vbn _CD
+1	_Vbn	Vbn _Modal
+
 
 1	_Vbg	Vbg
 1	_Vbg	Vbg _Det
@@ -237,6 +264,9 @@
 1	_Vbg	Vbg _Prps
 1	_Vbg	Vbg _DoDoes
 1	_Vbg	Vbg _WhAdv
+1	_Vbg	Vbg _CD
+1	_Vbg	Vbg _Modal
+
 
 1	_Adj	Adj
 1	_Adj	Adj _Det
@@ -260,6 +290,9 @@
 1	_Adj	Adj _Prps
 1	_Adj	Adj _DoDoes
 1	_Adj	Adj _WhAdv
+1	_Adj	Adj _CD
+1	_Adj	Adj _Modal
+
 
 1	_AdjComp	AdjComp
 1	_AdjComp	AdjComp _Det
@@ -283,6 +316,9 @@
 1	_AdjComp	AdjComp _Prps
 1	_AdjComp	AdjComp _DoDoes
 1	_AdjComp	AdjComp _WhAdv
+1	_AdjComp	AdjComp _CD
+1	_AdjComp	AdjComp _Modal
+
 
 1	_AdjSuper	AdjSuper
 1	_AdjSuper	AdjSuper _Det
@@ -306,6 +342,9 @@
 1	_AdjSuper	AdjSuper _Prps
 1	_AdjSuper	AdjSuper _DoDoes
 1	_AdjSuper	AdjSuper _WhAdv
+1	_AdjSuper	AdjSuper _CD
+1	_AdjSuper	AdjSuper _Modal
+
 
 
 1	_ProperObj	ProperObj
@@ -331,6 +370,9 @@
 1	_ProperObj	ProperObj _Prps
 1	_ProperObj	ProperObj _DoDoes
 1	_ProperObj	ProperObj _WhAdv
+1	_ProperObj	ProperObj _CD
+1	_ProperObj	ProperObj _Modal
+
 
 1	_PAUSE	PAUSE
 1	_PAUSE	PAUSE _Det
@@ -355,6 +397,9 @@
 1	_PAUSE	PAUSE _Prps
 1	_PAUSE	PAUSE _DoDoes
 1	_PAUSE	PAUSE _WhAdv
+1	_PAUSE	PAUSE _CD
+1	_PAUSE	PAUSE _Modal
+
 
 1	_Nouns	Nouns
 1	_Nouns	Nouns _Det
@@ -379,6 +424,9 @@
 1	_Nouns	Nouns _Prps
 1	_Nouns	Nouns _DoDoes
 1	_Nouns	Nouns _WhAdv
+1	_Nouns	Nouns _CD
+1	_Nouns	Nouns _Modal
+
 
 1	_Vb	Vb
 1	_Vb	Vb _Det
@@ -403,6 +451,9 @@
 1	_Vb	Vb _Prps
 1	_Vb	Vb _DoDoes
 1	_Vb	Vb _WhAdv
+1	_CD	CD _CD
+1	_CD	CD _Modal
+
 
 1	_Vbz	Vbz
 1	_Vbz	Vbz _Det
@@ -427,6 +478,9 @@
 1	_Vbz	Vbz _Prps
 1	_Vbz	Vbz _DoDoes
 1	_Vbz	Vbz _WhAdv
+1	_Vbz	Vbz _CD
+1	_Vbz	Vbz _Modal
+
 
 
 1	_Vbzs	Vbzs
@@ -452,6 +506,9 @@
 1	_Vbzs	Vbzs _Prps
 1	_Vbzs	Vbzs _DoDoes
 1	_Vbzs	Vbzs _WhAdv
+1	_Vbzs	Vbzs _CD
+1	_Vbzs	Vbzs _Modal
+
 
 1	_Prp	Prp
 1	_Prp	Prp _Det
@@ -476,6 +533,9 @@
 1	_Prp	Prp _Prps
 1	_Prp	Prp _DoDoes
 1	_Prp	Prp _WhAdv
+1	_Prp	Prp _CD
+1	_Prp	Prp _Modal
+
 
 1	_Prps	Prps
 1	_Prps	Prps _Det
@@ -500,6 +560,9 @@
 1	_Prps	Prps _Prps
 1	_Prps	Prps _DoDoes
 1	_Prps	Prps _WhAdv
+1	_Prps	Prps _CD
+1	_Prps	Prps _Modal
+
 
 1	_DoDoes	DoDoes
 1	_DoDoes	DoDoes _Det
@@ -524,6 +587,9 @@
 1	_DoDoes	DoDoes _Prps
 1	_DoDoes	DoDoes _DoDoes
 1	_DoDoes	DoDoes _WhAdv
+1	_DoDoes	DoDoes _CD
+1	_DoDoes	DoDoes _Modal
+
 
 1	_WhAdv	WhAdv
 1	_WhAdv	WhAdv _Det
@@ -548,6 +614,63 @@
 1	_WhAdv	WhAdv _Prps
 1	_WhAdv	WhAdv _DoDoes
 1	_WhAdv	WhAdv _WhAdv
+1	_WhAdv	WhAdv _CD
+1	_WhAdv	WhAdv _Modal
+
+
+
+1	_CD	CD
+1	_CD	CD _Det
+1	_CD	CD _Misc
+1	_CD	CD _Noun
+1	_CD	CD _Prep
+1	_CD	CD _Proper
+1	_CD	CD _VerbT
+1	_CD	CD _Vbd
+1	_CD	CD _Vbg
+1	_CD	CD _Vbn
+1	_CD	CD _Adj
+1	_CD	CD _AdjComp
+1	_CD	CD _AdjSuper
+1	_CD	CD _ProperObj
+1	_CD	CD _PAUSE
+1	_CD	CD _Nouns
+1	_CD	CD _Vb
+1	_CD	CD _Vbz
+1	_CD	CD _Vbzs
+1	_CD	CD _Prp
+1	_CD	CD _Prps
+1	_CD	CD _DoDoes
+1	_CD	CD _WhAdv
+1	_CD	CD _CD
+1	_CD	CD _Modal
+
+
+1	_Modal	Modal
+1	_Modal	Modal _Det
+1	_Modal	Modal _Misc
+1	_Modal	Modal _Noun
+1	_Modal	Modal _Prep
+1	_Modal	Modal _Proper
+1	_Modal	Modal _VerbT
+1	_Modal	Modal _Vbd
+1	_Modal	Modal _Vbg
+1	_Modal	Modal _Vbn
+1	_Modal	Modal _Adj
+1	_Modal	Modal _AdjComp
+1	_Modal	Modal _AdjSuper
+1	_Modal	Modal _ProperObj
+1	_Modal	Modal _PAUSE
+1	_Modal	Modal _Nouns
+1	_Modal	Modal _Vb
+1	_Modal	Modal _Vbz
+1	_Modal	Modal _Vbzs
+1	_Modal	Modal _Prp
+1	_Modal	Modal _Prps
+1	_Modal	Modal _DoDoes
+1	_Modal	Modal _WhAdv
+1	_Modal	Modal _CD
+1	_Modal	Modal _Modal
 
 
 

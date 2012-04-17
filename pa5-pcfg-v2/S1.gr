@@ -1,8 +1,8 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-99	START	S1
-1	START	S2
+60	START	S1
+40	START	S2
 
 # This is a very, very, very simple grammar to get you started.
 
@@ -20,27 +20,58 @@
 
 1	VP	NP Vbz
 
+
+
+1	VP	VerbT
+1	VP	Vb
+1	VP	Vbz
+1	VP	Vbzs
+
+
+1	VP	Prp VP
+1	VP	VP PP
+1	VP	VP Adv
+
 1	VP	Vb Prp Vb
 
-1	S1	DoDoes VP ?
+1	VP	Prp Vbzs
 
-1	S1	who DoDoes VP ?
+1	VP	Vbzs Prp VP
 
-1	S1	what DoDoes VP ?
+1	VP	Vbg NP VP
 
-1	S1	who DoDoes NP VP ?
+5	VP	VP NP
 
-1	S1	what DoDoes	NP VP ?
+5	VP	Modal Vb Vbn
 
-1	S1	WhAdv DoDoes NP VP ?
+5	VP	Modal Vb Vbn
+
+1	S1	QuestSentence ?
+
+1	Quest	DoDoes VP
+
+1	Quest	DoDoes NP VP
+
+1	Quest	VP
+
+1	QuestSentence	Quest
+
+1	QuestSentence	who Quest
+
+1	QuestSentence	what Quest
+
+1	QuestSentence	WhAdv Quest
 
 20	NP	Det Nbar
 15	NP	Nbar
-1	NP	Proper
-1	NP	ProperObj
+1	NP	Adj Nbar
 
 20	Nbar	Noun
-20	Nbar	Nouns
+10	Nbar	Nouns
+2	Nbar	CD Nouns
+5	Nbar	one Nbar
+1	Nbar	Proper
+1	Nbar	ProperObj
 1	Nbar	Nbar PP
 
 1	PP	Prep NP
