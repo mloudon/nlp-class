@@ -81,9 +81,9 @@
 1	VerbT	rides
 
 # End-of-sentence.
-1	EOS	!
-1	EOS	.
-1	EOS	?
+1	Misc	!
+1	Misc	.
+1	Misc	?
 
 # Pauses.
 1	Misc	,
@@ -187,8 +187,8 @@
 
 1	Misc	Camelot
 1	Misc	England
-1	Misc	Holy Grail
-1	Misc	Round Table
+1	ProperObj	Holy Grail
+1	ProperObj	Round Table
 
 # Plural proper nouns.
 1	Misc	Britons

@@ -10,7 +10,7 @@
 # Arthur is the king
 # Arthur rides the horse near the castle
 
-1	S1	NP VP EOS
+1	S1	NP VP .
 
 1	VP	VerbT NP
 
@@ -20,6 +20,7 @@
 20	Nbar	Noun
 10	Nbar	Adj Nbar
 1	Nbar	Nbar PP
+1	Nbar	Det ProperObj
 
 1	PP	Prep NP
 

@@ -11,6 +11,7 @@
 1	S2	_Adj
 1	S2	_AdjComp
 1	S2	_AdjSuper
+1	S2	_ProperObj
 
 1	_Det	Det
 1	_Det	Det _Det
@@ -25,6 +26,7 @@
 1	_Det	Det _Adj
 1	_Det	Det _AdjComp
 1	_Det	Det _AdjSuper
+1	_Det	Det _ProperObj
 
 1	_Misc	Misc
 1	_Misc	Misc _Det
@@ -39,6 +41,7 @@
 1	_Misc	Misc _Adj
 1	_Misc	Misc _AdjComp
 1	_Misc	Misc _AdjSuper
+1	_Misc	Misc _ProperObj
 
 1	_Noun	Noun
 1	_Noun	Noun _Det
@@ -53,6 +56,8 @@
 1	_Noun	Noun _Adj
 1	_Noun	Noun _AdjComp
 1	_Noun	Noun _AdjSuper
+1	_Noun	Noun _ProperObj
+
 
 1	_Prep	Prep
 1	_Prep	Prep _Det
@@ -67,6 +72,7 @@
 1	_Prep	Prep _Adj
 1	_Prep	Prep _AdjComp
 1	_Prep	Prep _AdjSuper
+1	_Prep	Prep _ProperObj
 
 1	_Proper	Proper
 1	_Proper	Proper _Det
@@ -81,6 +87,7 @@
 1	_Proper	Proper _Adj
 1	_Proper	Proper _AdjComp
 1	_Proper	Proper _AdjSuper
+1	_Proper	Proper _ProperObj
 
 1	_VerbT	VerbT
 1	_VerbT	VerbT _Det
@@ -95,6 +102,8 @@
 1	_VerbT	VerbT _Adj
 1	_VerbT	VerbT _AdjComp
 1	_VerbT	VerbT _AdjSuper
+1	_VerbT	VerbT _ProperObj
+
 
 1	_Vbd	Vbd
 1	_Vbd	Vbd _Det
@@ -108,6 +117,7 @@
 1	_Vbd	Vbd _Adj
 1	_Vbd	Vbd _AdjComp
 1	_Vbd	Vbd _AdjSuper
+1	_Vbd	Vbd _ProperObj
 
 
 1	_Vbn	Vbn
@@ -122,6 +132,7 @@
 1	_Vbn	Vbn _Adj
 1	_Vbn	Vbn _AdjComp
 1	_Vbn	Vbn _AdjSuper
+1	_Vbn	Vbn _ProperObj
 
 1	_Vbg	Vbg
 1	_Vbg	Vbg _Det
@@ -135,6 +146,7 @@
 1	_Vbg	Vbg _Adj
 1	_Vbg	Vbg _AdjComp
 1	_Vbg	Vbg _AdjSuper
+1	_Vbg	_Vbg _ProperObj
 
 1	_Adj	Adj
 1	_Adj	Adj _Det
@@ -148,6 +160,7 @@
 1	_Adj	Adj _Adj
 1	_Adj	Adj _AdjComp
 1	_Adj	Adj _AdjSuper
+1	_Adj	Adj _ProperObj
 
 1	_AdjComp	AdjComp
 1	_AdjComp	AdjComp _Det
@@ -161,6 +174,7 @@
 1	_AdjComp	AdjComp _Adj
 1	_AdjComp	AdjComp _AdjComp
 1	_AdjComp	AdjComp _AdjSuper
+1	_AdjComp	_AdjComp _ProperObj
 
 1	_AdjSuper	AdjSuper
 1	_AdjSuper	AdjSuper _Det
@@ -174,3 +188,19 @@
 1	_AdjSuper	AdjSuper _Adj
 1	_AdjSuper	AdjSuper _AdjComp
 1	_AdjSuper	AdjSuper _AdjSuper
+1	_AdjSuper	AdjSuper _ProperObj
+
+1	_ProperObj	ProperObj
+1	_ProperObj	ProperObj _Det
+1	_ProperObj	ProperObj _Misc
+1	_ProperObj	ProperObj _Noun
+1	_ProperObj	ProperObj _Prep
+1	_ProperObj	ProperObj _Proper
+1	_ProperObj	ProperObj _VerbT
+1	_ProperObj	ProperObj _Vbd
+1	_ProperObj	ProperObj _Vbg
+1	_ProperObj	ProperObj _Vbn
+1	_ProperObj	ProperObj _Adj
+1	_ProperObj	ProperObj _AdjComp
+1	_ProperObj	ProperObj _AdjSuper
+1	_ProperObj	ProperObj _ProperObj
