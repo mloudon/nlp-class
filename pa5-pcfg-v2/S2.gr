@@ -20,6 +20,7 @@
 1	SENTENCE	_Prp
 1	SENTENCE	_Prps
 1	SENTENCE	_DoDoes
+1	SENTENCE	_WhAdv
 
 
 1	_Det	Det
@@ -44,6 +45,7 @@
 1	_Det	Det _Prp
 1	_Det	Det _Prps
 1	_Det	Det _DoDoes
+1	_Det	Det _WhAdv
 
 1	_Misc	Misc
 1	_Misc	Misc _Det
@@ -67,6 +69,7 @@
 1	_Misc	Misc _Prp
 1	_Misc	Misc _Prps
 1	_Misc	Misc _DoDoes
+1	_Misc	Misc _WhAdv
 
 1	_Noun	Noun
 1	_Noun	Noun _Det
@@ -90,6 +93,7 @@
 1	_Noun	Noun _Prp
 1	_Noun	Noun _Prps
 1	_Noun	Noun _DoDoes
+1	_Noun	Noun _WhAdv
 
 
 1	_Prep	Prep
@@ -114,6 +118,7 @@
 1	_Prep	Prep _Prp
 1	_Prep	Prep _Prps
 1	_Prep	Prep _DoDoes
+1	_Prep	Prep _WhAdv
 
 1	_Proper	Proper
 1	_Proper	Proper _Det
@@ -137,6 +142,7 @@
 1	_Proper	Proper _Prp
 1	_Proper	Proper _Prps
 1	_Proper	Proper _DoDoes
+1	_Proper	Proper _WhAdv
 
 1	_VerbT	VerbT
 1	_VerbT	VerbT _Det
@@ -160,6 +166,7 @@
 1	_VerbT	VerbT _Prp
 1	_VerbT	VerbT _Prps
 1	_VerbT	VerbT _DoDoes
+1	_VerbT	VerbT _WhAdv
 
 
 1	_Vbd	Vbd
@@ -183,6 +190,7 @@
 1	_Vbd	Vbd _Prp
 1	_Vbd	Vbd _Prps
 1	_Vbd	Vbd _DoDoes
+1	_Vbd	Vbd _WhAdv
 
 1	_Vbn	Vbn
 1	_Vbn	Vbn _Det
@@ -205,6 +213,7 @@
 1	_Vbn	Vbn _Prp
 1	_Vbn	Vbn _Prps
 1	_Vbn	Vbn _DoDoes
+1	_Vbn	Vbn _WhAdv
 
 1	_Vbg	Vbg
 1	_Vbg	Vbg _Det
@@ -227,6 +236,7 @@
 1	_Vbg	Vbg _Prp
 1	_Vbg	Vbg _Prps
 1	_Vbg	Vbg _DoDoes
+1	_Vbg	Vbg _WhAdv
 
 1	_Adj	Adj
 1	_Adj	Adj _Det
@@ -249,6 +259,7 @@
 1	_Adj	Adj _Prp
 1	_Adj	Adj _Prps
 1	_Adj	Adj _DoDoes
+1	_Adj	Adj _WhAdv
 
 1	_AdjComp	AdjComp
 1	_AdjComp	AdjComp _Det
@@ -271,6 +282,7 @@
 1	_AdjComp	AdjComp _Prp
 1	_AdjComp	AdjComp _Prps
 1	_AdjComp	AdjComp _DoDoes
+1	_AdjComp	AdjComp _WhAdv
 
 1	_AdjSuper	AdjSuper
 1	_AdjSuper	AdjSuper _Det
@@ -293,6 +305,7 @@
 1	_AdjSuper	AdjSuper _Prp
 1	_AdjSuper	AdjSuper _Prps
 1	_AdjSuper	AdjSuper _DoDoes
+1	_AdjSuper	AdjSuper _WhAdv
 
 
 1	_ProperObj	ProperObj
@@ -317,6 +330,7 @@
 1	_ProperObj	ProperObj _Prp
 1	_ProperObj	ProperObj _Prps
 1	_ProperObj	ProperObj _DoDoes
+1	_ProperObj	ProperObj _WhAdv
 
 1	_PAUSE	PAUSE
 1	_PAUSE	PAUSE _Det
@@ -340,6 +354,7 @@
 1	_PAUSE	PAUSE _Prp
 1	_PAUSE	PAUSE _Prps
 1	_PAUSE	PAUSE _DoDoes
+1	_PAUSE	PAUSE _WhAdv
 
 1	_Nouns	Nouns
 1	_Nouns	Nouns _Det
@@ -363,6 +378,7 @@
 1	_Nouns	Nouns _Prp
 1	_Nouns	Nouns _Prps
 1	_Nouns	Nouns _DoDoes
+1	_Nouns	Nouns _WhAdv
 
 1	_Vb	Vb
 1	_Vb	Vb _Det
@@ -386,6 +402,7 @@
 1	_Vb	Vb _Prp
 1	_Vb	Vb _Prps
 1	_Vb	Vb _DoDoes
+1	_Vb	Vb _WhAdv
 
 1	_Vbz	Vbz
 1	_Vbz	Vbz _Det
@@ -409,6 +426,7 @@
 1	_Vbz	Vbz _Prp
 1	_Vbz	Vbz _Prps
 1	_Vbz	Vbz _DoDoes
+1	_Vbz	Vbz _WhAdv
 
 
 1	_Vbzs	Vbzs
@@ -433,6 +451,7 @@
 1	_Vbzs	Vbzs _Prp
 1	_Vbzs	Vbzs _Prps
 1	_Vbzs	Vbzs _DoDoes
+1	_Vbzs	Vbzs _WhAdv
 
 1	_Prp	Prp
 1	_Prp	Prp _Det
@@ -456,6 +475,7 @@
 1	_Prp	Prp _Prp
 1	_Prp	Prp _Prps
 1	_Prp	Prp _DoDoes
+1	_Prp	Prp _WhAdv
 
 1	_Prps	Prps
 1	_Prps	Prps _Det
@@ -479,6 +499,7 @@
 1	_Prps	Prps _Prp
 1	_Prps	Prps _Prps
 1	_Prps	Prps _DoDoes
+1	_Prps	Prps _WhAdv
 
 1	_DoDoes	DoDoes
 1	_DoDoes	DoDoes _Det
@@ -502,6 +523,31 @@
 1	_DoDoes	DoDoes _Prp
 1	_DoDoes	DoDoes _Prps
 1	_DoDoes	DoDoes _DoDoes
+1	_DoDoes	DoDoes _WhAdv
+
+1	_WhAdv	WhAdv
+1	_WhAdv	WhAdv _Det
+1	_WhAdv	WhAdv _Misc
+1	_WhAdv	WhAdv _Noun
+1	_WhAdv	WhAdv _Prep
+1	_WhAdv	WhAdv _Proper
+1	_WhAdv	WhAdv _VerbT
+1	_WhAdv	WhAdv _Vbd
+1	_WhAdv	WhAdv _Vbg
+1	_WhAdv	WhAdv _Vbn
+1	_WhAdv	WhAdv _Adj
+1	_WhAdv	WhAdv _AdjComp
+1	_WhAdv	WhAdv _AdjSuper
+1	_WhAdv	WhAdv _ProperObj
+1	_WhAdv	WhAdv _PAUSE
+1	_WhAdv	WhAdv _Nouns
+1	_WhAdv	WhAdv _Vb
+1	_WhAdv	WhAdv _Vbz
+1	_WhAdv	WhAdv _Vbzs
+1	_WhAdv	WhAdv _Prp
+1	_WhAdv	WhAdv _Prps
+1	_WhAdv	WhAdv _DoDoes
+1	_WhAdv	WhAdv _WhAdv
 
 
 

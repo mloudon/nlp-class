@@ -18,8 +18,21 @@
 
 1	VP	NP Vb
 
-1	VP	DoDoes VP
+1	VP	NP Vbz
 
+1	VP	Vb Prp Vb
+
+1	S1	DoDoes VP ?
+
+1	S1	who DoDoes VP ?
+
+1	S1	what DoDoes VP ?
+
+1	S1	who DoDoes NP VP ?
+
+1	S1	what DoDoes	NP VP ?
+
+1	S1	WhAdv DoDoes NP VP ?
 
 20	NP	Det Nbar
 15	NP	Nbar

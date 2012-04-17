@@ -318,10 +318,10 @@
 1	Misc	whose
 
 # Wh-adverbs
-1	Misc	how
-1	Misc	when
-1	Misc	where
-1	Misc	why
+1	WhAdv	how
+1	WhAdv	when
+1	WhAdv	where
+1	WhAdv	why
 
 
 # Possessive marker.
