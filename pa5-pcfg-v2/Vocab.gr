@@ -113,11 +113,11 @@
 1	Misc	there
 
 # Subordinating conjunctions.
-1	Misc	that
-1	Misc	so
-1	Misc	while
-1	Misc	because
-1	Misc	if
+1	Subconj	that
+1	Subconj	so
+1	Subconj	while
+1	Subconj	because
+1	Subconj	if
 
 # Modals.
 1	Modal	can
@@ -212,14 +212,14 @@
 1	Prps	their
 
 # Adverbs.
-1	Misc	again
-1	Misc	already
-1	Misc	currently
-1	Misc	frequently
-1	Misc	precisely
-1	Misc	south
-1	Misc	successfully
-1	Misc	unfortunately
+1	Adv	again
+1	Adv	already
+1	Adv	currently
+1	Adv	frequently
+1	Adv	precisely
+1	Adv	south
+1	Adv	successfully
+1	Adv	unfortunately
 
 # 'do'/'does'
 1	DoDoes	do
@@ -306,9 +306,9 @@
 1	Vbzs	know
 
 # Wh-determiners.
-1	Misc	that
-1	Misc	what
-1	Misc	which
+1	WhDet	that
+1	WhDet	what
+1	WhDet	which
 
 # Wh-pronouns.
 1	Misc	what

@@ -1,16 +1,13 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-70	START	S1
-#30	START	S2
+199	START	S1
+1	START	S2
 
 # This is a very, very, very simple grammar to get you started.
 
-1	S1	NP VP EOS
-1	S1	VP EOS
-
-1	VP	Vbg PP VerbT Adj
-
+20	S1	NP VP EOS
+20	S1	VP EOS
 
 1	VP	VerbT
 1	VP	Vb
@@ -19,33 +16,53 @@
 1	VP	Vbg
 1	VP	Vbd
 
-5	VP	VP NP
-5	VP	NP VP
-5	VP	VP VP
-1	VP	Prp VP
-1	VP	VP PP
+10	VP	VP NP
+10	VP	NP VP
+30	VP	VP VP
+
+30	VP	Prp VP
+10	VP	Prps VP
+10	VP	VP Prp
+10	VP	VP Prps
+
+5	VP	VP PP
 1	VP	VP Adv
+1	VP	VP Adj
 
-1	VP	Vb Vbn
-1	VP	Vb Vbg
-1	VP	Vb Vbd
-1	VP	Vbd Vbd
-
-1	VP	Vb Prp Vb
-1	VP	Prp Vbzs
-1	VP	Vbzs Prp VP
-1	VP	Vbg NP VP
+5	VP	Vb Vbn
+5	VP	Vb Vbg
+5	VP	Vbs Vbg
+5	VP	Vb Vbd
+5	VP	Vbd Vbd
 
 
-5	VP	Modal VP
+1	VP	VP PAUSE
+
+1	VP	VP Subconj VP
+1	VP	VP Subconj PAUSE VP
+1	VP	Subconj VP
+
+
+1	VP	Modal VP
 
 1	VP	NP DoDoes
 
-1	VP	neither VP nor VP
-1	VP	neither NP nor VP
-1	VP	either VP or VP
-1	VP	either NP or VP
 
+4	VP	neither VP nor VP
+4	VP	neither NP nor VP
+2	VP	either VP or VP
+2	VP	either NP or VP
+1	VP	VP or VP
+1	VP	VP and VP
+1	VP	NP or VP
+1	VP	NP and VP
+1	VP	WhAdv VP
+1	VP	VP WhAdv VP
+
+1	VP	VP WhDet
+1	VP	who	VP
+
+1	VP	DoDoes not VP
 
 1	S1	QuestSentence ?
 1	Quest	DoDoes VP
@@ -56,24 +73,31 @@
 1	QuestSentence	what Quest
 1	QuestSentence	WhAdv Quest
 
-20	NP	Det Nbar
+50	NP	Det Nbar
 15	NP	Nbar
-1	NP	Adj Nbar
-1	NP	Proper
-1	NP	ProperObj
+10	NP	Adj Nbar
+5	NP	Proper
+5	NP	ProperObj
 1	NP	neither NP nor NP
 1	NP	either NP or NP
+1	NP	NP and NP
+1	NP	NP or NP
+1	NP	NP PAUSE
+1	NP	the AdjSuper Noun
+1	NP	the AdjComp Nbar
+1	NP	Prp Nbar
+1	NP	Prps Nbar
 
 20	Nbar	Noun
 10	Nbar	Nouns
-2	Nbar	CD Nouns
+10	Nbar	CD Nouns
 5	Nbar	one Nbar
-1	Nbar	Proper
-1	Nbar	ProperObj
+5	Nbar	Proper
+5	Nbar	ProperObj
 1	Nbar	Nbar PP
 1	Nbar	Adj Nbar
 
-1	PP	Prep NP
-1	PP	Prep Prp
+30	PP	Prep NP
+5	PP	Prep Prp
 
 
