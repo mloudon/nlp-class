@@ -1,57 +1,54 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-199	START	S1
+99	START	S1
 1	START	S2
 
-# This is a very, very, very simple grammar to get you started.
+15	S1	NP VP EOS
+10	S1	VP EOS
 
-20	S1	NP VP EOS
-20	S1	VP EOS
+10	VP	VerbT
+51	VP	Vb
+11	VP	Vbz
+5	VP	Vbzs
+7	VP	Vbg
+8	VP	Vbd
 
-1	VP	VerbT
-1	VP	Vb
-1	VP	Vbz
-1	VP	Vbzs
-1	VP	Vbg
-1	VP	Vbd
+9	VP	VP NP
+9	VP	NP VP
+15	VP	VP VP
+9	VP	VP PP
 
-10	VP	VP NP
-10	VP	NP VP
-30	VP	VP VP
+8	VP	Prp VP
+1	VP	Prps VP
+1	VP	VP Prp
+1	VP	VP Prps
 
-30	VP	Prp VP
-10	VP	Prps VP
-10	VP	VP Prp
-10	VP	VP Prps
-
-5	VP	VP PP
-1	VP	VP Adv
+2	VP	VP Adv
 1	VP	VP Adj
 
-5	VP	Vb Vbn
-5	VP	Vb Vbg
-5	VP	Vbs Vbg
-5	VP	Vb Vbd
-5	VP	Vbd Vbd
+1	VP	Vb Vbn
+1	VP	Vb Vbg
+1	VP	Vbs Vbg
+1	VP	Vb Vbd
+1	VP	Vbd Vbd
 
 
 1	VP	VP PAUSE
 
-1	VP	VP Subconj VP
+4	VP	VP Subconj
 1	VP	VP Subconj PAUSE VP
 1	VP	Subconj VP
 
 
-1	VP	Modal VP
-
+6	VP	Modal VP
 1	VP	NP DoDoes
 
 
-4	VP	neither VP nor VP
-4	VP	neither NP nor VP
-2	VP	either VP or VP
-2	VP	either NP or VP
+1	VP	neither VP nor VP
+1	VP	neither NP nor VP
+1	VP	either VP or VP
+1	VP	either NP or VP
 1	VP	VP or VP
 1	VP	VP and VP
 1	VP	NP or VP
@@ -64,40 +61,39 @@
 
 1	VP	DoDoes not VP
 
-1	S1	QuestSentence ?
+5	S1	QuestSentence ?
 1	Quest	DoDoes VP
 1	Quest	DoDoes NP VP
-1	Quest	VP
+#1	Quest	VP
 1	QuestSentence	Quest
 1	QuestSentence	who Quest
 1	QuestSentence	what Quest
 1	QuestSentence	WhAdv Quest
 
-50	NP	Det Nbar
-15	NP	Nbar
-10	NP	Adj Nbar
-5	NP	Proper
-5	NP	ProperObj
+9	NP	Det Nbar
+5	NP	Nbar
+3	NP	Adj Nbar
+40	NP	Proper
+15	NP	ProperObj
 1	NP	neither NP nor NP
 1	NP	either NP or NP
 1	NP	NP and NP
 1	NP	NP or NP
-1	NP	NP PAUSE
+3	NP	NP PAUSE
 1	NP	the AdjSuper Noun
 1	NP	the AdjComp Nbar
-1	NP	Prp Nbar
-1	NP	Prps Nbar
+2	NP	Prps Nbar
 
 20	Nbar	Noun
-10	Nbar	Nouns
-10	Nbar	CD Nouns
-5	Nbar	one Nbar
-5	Nbar	Proper
-5	Nbar	ProperObj
+4	Nbar	Nouns
+3	Nbar	CD Nouns
+1	Nbar	one Nbar
+1	Nbar	Proper
+1	Nbar	ProperObj
 1	Nbar	Nbar PP
 1	Nbar	Adj Nbar
 
-30	PP	Prep NP
-5	PP	Prep Prp
+10	PP	Prep NP
+1	PP	Prep Prp
 
 
