@@ -28,9 +28,13 @@ class PCFGParser(Parser):
         # TODO: before you generate your grammar, the training
         #       trees need to be binarized so that rules are at
         #       most binary
-
-        self.lexicon = Lexicon(train_trees)
-        self.grammar = Grammar(train_trees)
+        new_trees=[]
+        for tree in train_trees:
+            new_tree = TreeAnnotations.binarize_tree(tree)
+            new_trees.append(new_tree)
+            
+        self.lexicon = Lexicon(new_trees)
+        self.grammar = Grammar(new_trees)
 
 
     def get_best_parse(self, sentence):
@@ -41,7 +45,8 @@ class PCFGParser(Parser):
         # TODO: implement this method
         #Score = namedtuple('Score', ['startindex', 'endindex','prob'], verbose=True)
         scores=[]
-        for i in range(len(sentence)):
+        
+        for i in range(0,len(sentence)):
             word = sentence[i]
             for a in self.lexicon.get_all_tags():
                 if self.lexicon.is_known (word):
@@ -49,7 +54,7 @@ class PCFGParser(Parser):
                 
             added=True
             while added:
-                added = false
+                added = False
                 for b in self.lexicon.get_all_tags():
                     for rule in get_unary_rules_by_child(b):
                         a = rule.parent
@@ -61,11 +66,11 @@ class PCFGParser(Parser):
                                 added = true 
                     
 
-        
+        print scores
                  
                 
         
-        return None
+        return BaselineParser.get_best_parse(sentence)
 
 
 class BaselineParser(Parser):
