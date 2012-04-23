@@ -80,12 +80,14 @@ class PCFGParser(Parser):
                         while added:
                             added = False
                             for b in self.grd[i,i+diag].ruleprobs.keys():
+                                #print 'checking unaries for %s in cell %d %d' %(b,i,i+diag)
                                 for rule in self.grammar.get_unary_rules_by_child(b):
                                     a = rule.parent
                                     if self.grd[i,i+diag].ruleprobs[b] > 0:
                                         prob = rule.score * self.grd[i,i+diag].ruleprobs[b]
                                         
                                         if(a not in self.grd[i,i+diag].ruleprobs.keys()) or (prob > self.grd[i,i+diag].ruleprobs[a]):
+                                            #print 'adding unary rule %s with parent %s and child %s' % (rule,rule.parent,rule.child)
                                             self.grd[i,i+diag].ruleprobs[a] = prob
                                             self.grd[i,i+diag].back[a] = b
                                             added = True          
@@ -94,24 +96,32 @@ class PCFGParser(Parser):
                         x=i
                         y=i+diag
                         #print 'diag:%s, this cell: %d %d' %(diag,x,y)
-                        leftruleprobs = self.grd[x,y-1].ruleprobs
-                        rightruleprobs = self.grd[x+1,y].ruleprobs
-                        #print 'diag:%s, this cell: %d %d; left %d %d; right %d %d' %(diag,x,y,x,y-1,x+1,y)
+                        leftx = x
+                        lefty = y-1
+                        rightx = x+1
+                        righty = y
+                        leftruleprobs = self.grd[leftx,lefty].ruleprobs
+                        rightruleprobs = self.grd[rightx,righty].ruleprobs
+                        print 'diag:%s, this cell: %d %d; left %d %d; right %d %d' %(diag,x,y,leftx,lefty,rightx,righty)
                         for left_child in leftruleprobs.keys():
-                                
                                 for rule in self.grammar.get_binary_rules_by_left_child(left_child):
                                     if rule.right_child in rightruleprobs.keys():
                                         prob = rule.score * rightruleprobs[rule.right_child] * leftruleprobs[left_child]
-                                        if rule.parent not in self.grd[i,i+diag].ruleprobs or prob > self.grd[i,i+diag].ruleprobs[rule.parent]:
-                                            
-                                            self.grd[i,i+diag].ruleprobs[rule.parent] = prob
-                                            self.grd[i,i+diag].back[rule.parent] = [x,y-1,x+1,y,rule.left_child,rule.right_child]
+                                        if rule.parent not in self.grd[x,y].ruleprobs or prob > self.grd[x,y].ruleprobs[rule.parent]:
+                                            self.grd[x,y].ruleprobs[rule.parent] = prob
+                                            self.grd[x,y].back[rule.parent] = [x,y-1,x+1,y,rule.left_child,rule.right_child]
                         
                         if diag > 1:
                             for split in range(1,y+1):
-                                leftruleprobs = self.grd[0,split-1].ruleprobs
-                                rightruleprobs = self.grd[split,y].ruleprobs
-                                #print 'split: %s, this cell: %d %d; left %d %d; right %d %d' %(split,x,y,0,split-1,split,y)
+                                leftx = 0
+                                lefty = split-1
+                                rightx = split
+                                righty = y
+                                print 'this cell: %d %d; split: %s; left %d %d; right %d %d' %(x,y,split,leftx,lefty,rightx,righty)
+                                
+                                leftruleprobs = self.grd[leftx, lefty].ruleprobs
+                                rightruleprobs = self.grd[rightx,righty].ruleprobs
+                                
                                 
                                 for left_child in leftruleprobs.keys():
                                     
@@ -141,23 +151,31 @@ class PCFGParser(Parser):
                                 
         for diag in range (0, len(sentence)):
             for i in range(0,len(sentence)-diag):
-                print ' %d:%d %s'%(i,i+diag,self.grd[i,i+diag].ruleprobs)
-                print ' %d:%d %s'%(i,i+diag,self.grd[i,i+diag].back)
+                for tag in self.grd[i,i+diag].ruleprobs.keys():
+                    print ' %d:%d %s with prob %s and back %s'%(i,i+diag,tag,self.grd[i,i+diag].ruleprobs[tag],self.grd[i,i+diag].back[tag])
+                    #print ' %d:%d %s'%(i,i+diag,self.grd[i,i+diag].back)
                 
-        tree = Tree('ROOT', self.build_tree(0,len(sentence)-1,self.grd[0,len(sentence)-1,].back['ROOT']))
-        print tree
-        return tree
+        tree = Tree('ROOT')
+        tree.children=[self.build_tree(0,len(sentence)-1,self.grd[0,len(sentence)-1,].back['ROOT'])]
+        
+        return TreeAnnotations.unannotate_tree(tree)
     
     def build_tree(self, x,y,node):
         try:
             rule = self.grd[x,y].back[node]
-            print 'building tree from node %s at %d %d with rule %s' % (node,x,y,rule)
+            print node + '-> %s' % rule
+            #print 'building tree from node %s at %d %d with rule %s' % (node,x,y,rule)
             if isinstance (rule, list):
-                tree = Tree(node, [self.build_tree(rule[0],rule[1],rule[4]),self.build_tree(rule[2],rule[3],rule[5])])
+                tree = Tree(node)
+                tree.children=[self.build_tree(rule[0],rule[1],rule[4]),self.build_tree(rule[2],rule[3],rule[5])]
             else:
-                tree = Tree(node, self.build_tree(x,y,rule))
+                tree = Tree(node)
+                tree.children=[self.build_tree(x,y,rule)]
         except KeyError:
-            tree = Tree(node, [])
+            tree = Tree(node)
+            tree.children = []
+        
+        return tree
 
 
 class BaselineParser(Parser):
