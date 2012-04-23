@@ -20,6 +20,24 @@ class Parser:
         Should return a Tree
         """
         pass
+    
+class Grid(object):
+    class _Cell(object):
+        ruleprobs = {}
+        back = {}
+
+    width = None
+    height = None
+
+    def __init__(self, width, height):
+        super(Grid, self).__init__()
+        self.width = width
+        self.height = height
+        self._field = [[self._Cell() for y in range(height)]
+                                            for x in range(width)]
+    def __getitem__(self, index):
+        x, y = index
+        return self._field[x][y]
 
 
 class PCFGParser(Parser):
@@ -43,34 +61,55 @@ class PCFGParser(Parser):
         'sentence' is a list of strings (words) that form a sentence.
         """
         # TODO: implement this method
-        #Score = namedtuple('Score', ['startindex', 'endindex','prob'], verbose=True)
-        scores=[]
+        grid = Grid(len(sentence)+1,len(sentence)+1)
         
-        for i in range(0,len(sentence)):
-            word = sentence[i]
-            for a in self.lexicon.get_all_tags():
-                if self.lexicon.is_known (word):
-                    scores[i][i+1][a] = self.lexicon.score_tagging(word,a)
-                
-            added=True
-            while added:
-                added = False
-                for b in self.lexicon.get_all_tags():
-                    for rule in get_unary_rules_by_child(b):
-                        a = rule.parent
-                        if scores[i][i+1][b] > 0:
-                            prob = rule.score * scores[i][i+1][b]
-                            if(prob > scores[i][i+1][a]):
-                                scores[i][i+1][a] = prob
-                                back[i][i+1][a] = b
-                                added = true 
+        for diag in range (0, len(sentence)-1):
+            for i in range(0,len(sentence)):
+                if diag==0:
+                    word = sentence[i]
                     
-
-        print scores
-                 
-                
+                    for a in self.lexicon.get_all_tags():
+                        if self.lexicon.is_known (word) and self.lexicon.score_tagging(word,a)>0:
+                            #print 'adding word %s with POS %s and prob %s'%(word,a,self.lexicon.score_tagging(word,a))
+                            grid[i,i+diag].ruleprobs[a] = self.lexicon.score_tagging(word,a)
+                else:
+                    for i in range(0,len(sentence)-diag):
+                        for split in range (0, len(sentence)-diag-1):
+                            x=i
+                            y=i+diag+split
+                            leftruleprobs = grid[x-1,y].ruleprobs
+                            rightruleprobs = grid[x,y+1].ruleprobs
+                            print 'this cell: %d %d; left %d %d; right %d %d' %(i,i+diag,i,i+diag-1,i+1,i+diag)
+                            
+                            for left_child in leftruleprobs.keys():
+                                
+                                for rule in self.grammar.get_binary_rules_by_left_child(left_child):
+                                    if rule.right_child in rightruleprobs.keys():
+                                        prob = rule.score * rightruleprobs[rule.right_child] * leftruleprobs[left_child]
+                                        if rule.parent not in grid[i,i+diag].ruleprobs or prob > grid[i,i+diag].ruleprobs[rule.parent]:
+                                            
+                                            grid[i,i+diag].ruleprobs[rule.parent] = prob
+                                            grid[i,i+diag].back[a] = {rule.left_child,rule.right_child}
+                            
+                added=True
+                while added:
+                    added = False
+                    for b in grid[i,i+diag].ruleprobs.keys():
+                        for rule in self.grammar.get_unary_rules_by_child(b):
+                            a = rule.parent
+                            if grid[i,i+diag].ruleprobs[b] > 0:
+                                prob = rule.score * grid[i,i+diag].ruleprobs[b]
+                                
+                                if(a not in grid[i,i+diag].ruleprobs.keys()) or (prob > grid[i,i+diag].ruleprobs[a]):
+                                    grid[i,i+diag].ruleprobs[a] = prob
+                                    grid[i,i+diag].back[a] = b
+                                    added = True           
+                                
+        for diag in range (0, len(sentence)-1):
+            for i in range(0,len(sentence)-diag):
+                print ' %d:%d %s'%(i,i+diag,grid[i,i+diag].ruleprobs)
         
-        return BaselineParser.get_best_parse(sentence)
+        return None
 
 
 class BaselineParser(Parser):
