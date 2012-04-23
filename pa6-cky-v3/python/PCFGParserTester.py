@@ -63,25 +63,40 @@ class PCFGParser(Parser):
         # TODO: implement this method
         grid = Grid(len(sentence)+1,len(sentence)+1)
         
-        for diag in range (0, len(sentence)-1):
-            for i in range(0,len(sentence)):
+#        for diag in range (0,len(sentence)):
+        for diag in range (0,1):
+            
                 if diag==0:
-                    word = sentence[i]
-                    
-                    for a in self.lexicon.get_all_tags():
-                        if self.lexicon.is_known (word) and self.lexicon.score_tagging(word,a)>0:
-                            #print 'adding word %s with POS %s and prob %s'%(word,a,self.lexicon.score_tagging(word,a))
-                            grid[i,i+diag].ruleprobs[a] = self.lexicon.score_tagging(word,a)
+                    for i in range(0,len(sentence)):
+                        word = sentence[i]
+                        
+                        for a in self.lexicon.get_all_tags():
+                            if self.lexicon.is_known (word) and self.lexicon.score_tagging(word,a)>0:
+                                print 'adding word %s with POS %s and prob %s at %d %d'%(word,a,self.lexicon.score_tagging(word,a),i,i+diag)
+                                grid[i,i+diag].ruleprobs[a] = self.lexicon.score_tagging(word,a)
+                        
+                        added=True
+                        while added:
+                            added = False
+                            for b in grid[i,i+diag].ruleprobs.keys():
+                                for rule in self.grammar.get_unary_rules_by_child(b):
+                                    a = rule.parent
+                                    if grid[i,i+diag].ruleprobs[b] > 0:
+                                        prob = rule.score * grid[i,i+diag].ruleprobs[b]
+                                        
+                                        if(a not in grid[i,i+diag].ruleprobs.keys()) or (prob > grid[i,i+diag].ruleprobs[a]):
+                                            grid[i,i+diag].ruleprobs[a] = prob
+                                            grid[i,i+diag].back[a] = b
+                                            added = True          
                 else:
                     for i in range(0,len(sentence)-diag):
-                        for split in range (0, len(sentence)-diag-1):
-                            x=i
-                            y=i+diag+split
-                            leftruleprobs = grid[x-1,y].ruleprobs
-                            rightruleprobs = grid[x,y+1].ruleprobs
-                            print 'this cell: %d %d; left %d %d; right %d %d' %(i,i+diag,i,i+diag-1,i+1,i+diag)
-                            
-                            for left_child in leftruleprobs.keys():
+                        x=i
+                        y=i+diag
+                        #print 'diag:%s, this cell: %d %d' %(diag,x,y)
+                        leftruleprobs = grid[x,y-1].ruleprobs
+                        rightruleprobs = grid[x+1,y].ruleprobs
+                        #print 'diag:%s, this cell: %d %d; left %d %d; right %d %d' %(diag,x,y,x,y-1,x+1,y)
+                        for left_child in leftruleprobs.keys():
                                 
                                 for rule in self.grammar.get_binary_rules_by_left_child(left_child):
                                     if rule.right_child in rightruleprobs.keys():
@@ -90,22 +105,40 @@ class PCFGParser(Parser):
                                             
                                             grid[i,i+diag].ruleprobs[rule.parent] = prob
                                             grid[i,i+diag].back[a] = {rule.left_child,rule.right_child}
+                        
+                        if diag > 1:
+                            for split in range(1,y+1):
+                                leftruleprobs = grid[0,split-1].ruleprobs
+                                rightruleprobs = grid[split,y].ruleprobs
+                                #print 'split: %s, this cell: %d %d; left %d %d; right %d %d' %(split,x,y,0,split-1,split,y)
+                                
+                                for left_child in leftruleprobs.keys():
+                                    
+                                    for rule in self.grammar.get_binary_rules_by_left_child(left_child):
+                                        if rule.right_child in rightruleprobs.keys():
+                                            prob = rule.score * rightruleprobs[rule.right_child] * leftruleprobs[left_child]
+                                            if rule.parent not in grid[i,i+diag].ruleprobs or prob > grid[i,i+diag].ruleprobs[rule.parent]:
+                                                
+                                                grid[i,i+diag].ruleprobs[rule.parent] = prob
+                                                grid[i,i+diag].back[a] = {rule.left_child,rule.right_child}
+                        
+                        added=True
+                        while added:
+                            added = False
+                            for b in grid[i,i+diag].ruleprobs.keys():
+                                for rule in self.grammar.get_unary_rules_by_child(b):
+                                    a = rule.parent
+                                    if grid[i,i+diag].ruleprobs[b] > 0:
+                                        prob = rule.score * grid[i,i+diag].ruleprobs[b]
+                                        
+                                        if(a not in grid[i,i+diag].ruleprobs.keys()) or (prob > grid[i,i+diag].ruleprobs[a]):
+                                            grid[i,i+diag].ruleprobs[a] = prob
+                                            grid[i,i+diag].back[a] = b
+                                            added = True
                             
-                added=True
-                while added:
-                    added = False
-                    for b in grid[i,i+diag].ruleprobs.keys():
-                        for rule in self.grammar.get_unary_rules_by_child(b):
-                            a = rule.parent
-                            if grid[i,i+diag].ruleprobs[b] > 0:
-                                prob = rule.score * grid[i,i+diag].ruleprobs[b]
+                 
                                 
-                                if(a not in grid[i,i+diag].ruleprobs.keys()) or (prob > grid[i,i+diag].ruleprobs[a]):
-                                    grid[i,i+diag].ruleprobs[a] = prob
-                                    grid[i,i+diag].back[a] = b
-                                    added = True           
-                                
-        for diag in range (0, len(sentence)-1):
+        for diag in range (0, len(sentence)):
             for i in range(0,len(sentence)-diag):
                 print ' %d:%d %s'%(i,i+diag,grid[i,i+diag].ruleprobs)
         
