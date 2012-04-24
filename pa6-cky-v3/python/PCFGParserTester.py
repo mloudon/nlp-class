@@ -63,30 +63,30 @@ class PCFGParser(Parser):
         'sentence' is a list of strings (words) that form a sentence.
         """
         # TODO: implement this method
-        self.grd = Grid(len(sentence)+1,len(sentence)+1)
+        grid = Grid(len(sentence)+1,len(sentence)+1)
+        print sentence
 
         for i in range(0,len(sentence)):
           word = sentence[i]
-          
           for a in self.lexicon.get_all_tags():
-              if self.lexicon.is_known (word) and self.lexicon.score_tagging(word,a)>0:
-                  self.grd[i,i].ruleprobs[a] = self.lexicon.score_tagging(word,a)
-                  self.grd[i,i].back[a] = word
-          
+              if  self.lexicon.score_tagging(word,a)>0:
+                  grid[i,i].ruleprobs[a] = self.lexicon.score_tagging(word,a)
+                  grid[i,i].back[a] = word
+                  
           added=True
           while added:
               added = False
-              for b in self.grd[i,i].ruleprobs.keys():
+              for b in grid[i,i].ruleprobs.keys():
                   for rule in self.grammar.get_unary_rules_by_child(b):
                       a = rule.parent
-                      if self.grd[i,i].ruleprobs[b] > 0:
-                          prob = rule.score * self.grd[i,i].ruleprobs[b]
+                      if grid[i,i].ruleprobs[b] > 0:
+                          prob = rule.score * grid[i,i].ruleprobs[b]
                           
-                          if(a not in self.grd[i,i].ruleprobs.keys()) or (prob > self.grd[i,i].ruleprobs[a]):
-                              self.grd[i,i].ruleprobs[a] = prob
-                              self.grd[i,i].back[a] = b
-                              added = True          
-          
+                          if(a not in grid[i,i].ruleprobs.keys()) or (prob > grid[i,i].ruleprobs[a]):
+                              grid[i,i].ruleprobs[a] = prob
+                              grid[i,i].back[a] = b
+                              added = True                       
+                  
         for span in range(0,len(sentence)):
             for begin in range (0,len(sentence)- span):
                 end = begin + span
@@ -97,55 +97,46 @@ class PCFGParser(Parser):
                     lefty=split
                     rightx=split+1
                     righty=end
-                    leftruleprobs = self.grd[leftx,lefty].ruleprobs
-                    rightruleprobs = self.grd[rightx,righty].ruleprobs
-                    print 'span %s, this cell: %d %d; left %d %d; right %d %d' %(span,x,y,leftx,lefty,rightx,righty)
+                    leftruleprobs = grid[leftx,lefty].ruleprobs
+                    rightruleprobs = grid[rightx,righty].ruleprobs
+                    #print 'span %s, this cell: %d %d; left %d %d; right %d %d; leftkeys %s, rightkeys %s' %(span,x,y,leftx,lefty,rightx,righty, leftruleprobs.keys(),rightruleprobs.keys())
                   
                     for left_child in leftruleprobs.keys():
                         for rule in self.grammar.get_binary_rules_by_left_child(left_child):
-                              if rule.right_child in rightruleprobs.keys():
+                            if rule.right_child in rightruleprobs.keys():
                                   prob = rule.score * rightruleprobs[rule.right_child] * leftruleprobs[left_child]
-                                  if rule.parent not in self.grd[x,y].ruleprobs or prob > self.grd[x,y].ruleprobs[rule.parent]:
-                                      self.grd[x,y].ruleprobs[rule.parent] = prob
-                                      self.grd[x,y].back[rule.parent] = [leftx,lefty,rightx,righty,rule.left_child,rule.right_child]
+                                  if rule.parent not in grid[x,y].ruleprobs or prob > grid[x,y].ruleprobs[rule.parent]:
+                                      grid[x,y].ruleprobs[rule.parent] = prob
+                                      grid[x,y].back[rule.parent] = [leftx,lefty,rightx,righty,rule.left_child,rule.right_child]
                 added=True
                 while added:
                     added = False
-                    for b in self.grd[x,y].ruleprobs.keys():
+                    for b in grid[x,y].ruleprobs.keys():
                         for rule in self.grammar.get_unary_rules_by_child(b):
                             a = rule.parent
-                            if self.grd[x,y].ruleprobs[b] > 0:
-                                prob = rule.score * self.grd[x,y].ruleprobs[b]
-                                if(a not in self.grd[x,y].ruleprobs.keys()) or (prob > self.grd[x,y].ruleprobs[a]):
-                                    self.grd[x,y].ruleprobs[a] = prob
-                                    self.grd[x,y].back[a] = b
-                                    added = True
-              
-                 
-                                
-        for diag in range (0, len(sentence)):
-            for i in range(0,len(sentence)-diag):
-                print '%d:%d' % (i, i + diag)
-                for tag in self.grd[i,i+diag].ruleprobs.keys():
-                    print ' %d:%d %s with prob %s and back %s'%(i,i+diag,tag,self.grd[i,i+diag].ruleprobs[tag],self.grd[i,i+diag].back[tag])
-                    #print ' %d:%d %s'%(i,i+diag,self.grd[i,i+diag].back)
-                
-        tree = Tree('ROOT')
-        tree.children=[self.build_tree(0,len(sentence)-1,self.grd[0,len(sentence)-1,].back['ROOT'])]
+                            if grid[x,y].ruleprobs[b] > 0:
+                                prob = rule.score * grid[x,y].ruleprobs[b]
+                                if(a not in grid[x,y].ruleprobs.keys()) or (prob > grid[x,y].ruleprobs[a]):
+                                    grid[x,y].ruleprobs[a] = prob
+                                    grid[x,y].back[a] = b
+                                    added = True 
         
+        print 'done with grid for %s' %sentence
+        tree = Tree('ROOT')
+        tree.children=[self.build_tree(0,len(sentence)-1,grid[0,len(sentence)-1,].back['ROOT'],grid)]
         return TreeAnnotations.unannotate_tree(tree)
     
-    def build_tree(self, x,y,node):
+    def build_tree(self, x,y,node,grid):
         try:
-            rule = self.grd[x,y].back[node]
-            print node + '-> %s' % rule
+            rule = grid[x,y].back[node]
+            #print node + '-> %s' % rule
             #print 'building tree from node %s at %d %d with rule %s' % (node,x,y,rule)
             if isinstance (rule, list):
                 tree = Tree(node)
-                tree.children=[self.build_tree(rule[0],rule[1],rule[4]),self.build_tree(rule[2],rule[3],rule[5])]
+                tree.children=[self.build_tree(rule[0],rule[1],rule[4],grid),self.build_tree(rule[2],rule[3],rule[5],grid)]
             else:
                 tree = Tree(node)
-                tree.children=[self.build_tree(x,y,rule)]
+                tree.children=[self.build_tree(x,y,rule,grid)]
         except KeyError:
             tree = Tree(node)
             tree.children = []
@@ -553,14 +544,14 @@ class UnaryRule:
         return True
 
 
-MAX_LENGTH = 20
+MAX_LENGTH = 5
 
 def test_parser(parser, test_trees):
     evaluator = EnglishPennTreebankParseEvaluator.LabeledConstituentEval(
             ["ROOT"], set(["''", "``", ".", ":", ","]))
     for test_tree in test_trees:
         test_sentence = test_tree.get_yield()
-        if len(test_sentence) > 20:
+        if len(test_sentence) > MAX_LENGTH:
             continue
         guessed_tree = parser.get_best_parse(test_sentence)
         print "Guess:\n%s" % Trees.PennTreeRenderer.render(guessed_tree)
@@ -628,7 +619,7 @@ if __name__ == '__main__':
 
         # test data: last of 4 datums
         print "Loading test trees..."
-        test_trees = read_trees(base_path, 4, 4)
+        test_trees = read_trees(base_path, 4, 5)
         print "done."
 
     if data_set == "masc":
