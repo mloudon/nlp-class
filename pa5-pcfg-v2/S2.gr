@@ -1,883 +1,841 @@
-1	S2	SENTENCE EOS
-1	SENTENCE	_Det
-1	SENTENCE	_Misc
-1	SENTENCE	_Noun
-1	SENTENCE	_Prep
-1	SENTENCE	_Proper
-1	SENTENCE	_VerbT
-1	SENTENCE	_Vbd
-1	SENTENCE	_Vbg
-1	SENTENCE	_Vbn
-1	SENTENCE	_Adj
-1	SENTENCE	_AdjComp
-1	SENTENCE	_AdjSuper
-1	SENTENCE	_ProperObj
-1	SENTENCE	_PAUSE
-1	SENTENCE	_Nouns
-1	SENTENCE	_Vb
-1	SENTENCE	_Vbz
-1	SENTENCE	_Vbzs
-1	SENTENCE	_Prp
-1	SENTENCE	_Prps
-1	SENTENCE	_DoDoes
-1	SENTENCE	_WhAdv
-1	SENTENCE	_CD
-1	SENTENCE	_Modal
-1	SENTENCE	_Adv
-1	SENTENCE	_Subconj
-1	SENTENCE	_WhDet
-
-
-
-
-1	_Det	Det
-1	_Det	Det _Det
-1	_Det	Det _Misc
-1	_Det	Det _Noun
-1	_Det	Det _Prep
-1	_Det	Det _Proper
-1	_Det	Det _VerbT
-1	_Det	Det _Vbd
-1	_Det	Det _Vbg
-1	_Det	Det _Vbn
-1	_Det	Det _Adj
-1	_Det	Det _AdjComp
-1	_Det	Det _AdjSuper
-1	_Det	Det _ProperObj
-1	_Det	Det _PAUSE
-1	_Det	Det _Nouns
-1	_Det	Det _Vb
-1	_Det	Det _Vbz
-1	_Det	Det _Vbzs
-1	_Det	Det _Prp
-1	_Det	Det _Prps
-1	_Det	Det _DoDoes
-1	_Det	Det _WhAdv
-1	_Det	Det _CD
-1	_Det	Det _Modal
-1	_Det	Det _Adv
-1	_Det	Det _Subconj
-1	_Det	Det _WhDet
-
-
-
-
-1	_Misc	Misc
-1	_Misc	Misc _Det
-1	_Misc	Misc _Misc
-1	_Misc	Misc _Noun
-1	_Misc	Misc _Prep
-1	_Misc	Misc _Proper
-1	_Misc	Misc _VerbT
-1	_Misc	Misc _Vbd
-1	_Misc	Misc _Vbg
-1	_Misc	Misc _Vbn
-1	_Misc	Misc _Adj
-1	_Misc	Misc _AdjComp
-1	_Misc	Misc _AdjSuper
-1	_Misc	Misc _ProperObj
-1	_Misc	Misc _PAUSE
-1	_Misc	Misc _Nouns
-1	_Misc	Misc _Vb
-1	_Misc	Misc _Vbz
-1	_Misc	Misc _Vbzs
-1	_Misc	Misc _Prp
-1	_Misc	Misc _Prps
-1	_Misc	Misc _DoDoes
-1	_Misc	Misc _WhAdv
-1	_Misc	Misc _CD
-1	_Misc	Misc _Modal
-1	_Misc	Misc _Adv
-1	_Misc	Misc _Subconj
-1	_Misc	Misc _WhDet
-
-
-
-
-1	_Noun	Noun
-1	_Noun	Noun _Det
-1	_Noun	Noun _Misc
-1	_Noun	Noun _Noun
-1	_Noun	Noun _Prep
-1	_Noun	Noun _Proper
-1	_Noun	Noun _VerbT
-1	_Noun	Noun _Vbd
-1	_Noun	Noun _Vbg
-1	_Noun	Noun _Vbn
-1	_Noun	Noun _Adj
-1	_Noun	Noun _AdjComp
-1	_Noun	Noun _AdjSuper
-1	_Noun	Noun _ProperObj
-1	_Noun	Noun _PAUSE
-1	_Noun	Noun _Nouns
-1	_Noun	Noun _Vb
-1	_Noun	Noun _Vbz
-1	_Noun	Noun _Vbzs
-1	_Noun	Noun _Prp
-1	_Noun	Noun _Prps
-1	_Noun	Noun _DoDoes
-1	_Noun	Noun _WhAdv
-1	_Noun	Noun _CD
-1	_Noun	Noun _Modal
-1	_Noun	Noun _Adv
-1	_Noun	Noun _Subconj
-1	_Noun	Noun _WhDet
-
-
-
-
-
-1	_Prep	Prep
-1	_Prep	Prep _Det
-1	_Prep	Prep _Misc
-1	_Prep	Prep _Noun
-1	_Prep	Prep _Prep
-1	_Prep	Prep _Proper
-1	_Prep	Prep _VerbT
-1	_Prep	Prep _Vbd
-1	_Prep	Prep _Vbg
-1	_Prep	Prep _Vbn
-1	_Prep	Prep _Adj
-1	_Prep	Prep _AdjComp
-1	_Prep	Prep _AdjSuper
-1	_Prep	Prep _ProperObj
-1	_Prep	Prep _PAUSE
-1	_Prep	Prep _Nouns
-1	_Prep	Prep _Vb
-1	_Prep	Prep _Vbz
-1	_Prep	Prep _Vbzs
-1	_Prep	Prep _Prp
-1	_Prep	Prep _Prps
-1	_Prep	Prep _DoDoes
-1	_Prep	Prep _WhAdv
-1	_Prep	Prep _CD
-1	_Prep	Prep _Modal
-1	_Prep	Prep _Adv
-1	_Prep	Prep _Subconj
-1	_Prep	Prep _WhDet
-
-
-
-
-1	_Proper	Proper
-1	_Proper	Proper _Det
-1	_Proper	Proper _Misc
-1	_Proper	Proper _Noun
-1	_Proper	Proper _Prep
-1	_Proper	Proper _Proper
-1	_Proper	Proper _VerbT
-1	_Proper	Proper _Vbd
-1	_Proper	Proper _Vbg
-1	_Proper	Proper _Vbn
-1	_Proper	Proper _Adj
-1	_Proper	Proper _AdjComp
-1	_Proper	Proper _AdjSuper
-1	_Proper	Proper _ProperObj
-1	_Proper	Proper _PAUSE
-1	_Proper	Proper _Nouns
-1	_Proper	Proper _Vb
-1	_Proper	Proper _Vbz
-1	_Proper	Proper _Vbzs
-1	_Proper	Proper _Prp
-1	_Proper	Proper _Prps
-1	_Proper	Proper _DoDoes
-1	_Proper	Proper _WhAdv
-1	_Proper	Proper _CD
-1	_Proper	Proper _Modal
-1	_Proper	Proper _Adv
-1	_Proper	Proper _Subconj
-1	_Proper	Proper _WhDet
-
-
-
-
-1	_VerbT	VerbT
-1	_VerbT	VerbT _Det
-1	_VerbT	VerbT _Misc
-1	_VerbT	VerbT _Noun
-1	_VerbT	VerbT _Prep
-1	_VerbT	VerbT _Proper
-1	_VerbT	VerbT _VerbT
-1	_VerbT	VerbT _Vbd
-1	_VerbT	VerbT _Vbg
-1	_VerbT	VerbT _Vbn
-1	_VerbT	VerbT _Adj
-1	_VerbT	VerbT _AdjComp
-1	_VerbT	VerbT _AdjSuper
-1	_VerbT	VerbT _ProperObj
-1	_VerbT	VerbT _PAUSE
-1	_VerbT	VerbT _Nouns
-1	_VerbT	VerbT _Vb
-1	_VerbT	VerbT _Vbz
-1	_VerbT	VerbT _Vbzs
-1	_VerbT	VerbT _Prp
-1	_VerbT	VerbT _Prps
-1	_VerbT	VerbT _DoDoes
-1	_VerbT	VerbT _WhAdv
-1	_VerbT	VerbT _CD
-1	_VerbT	VerbT _Modal
-1	_VerbT	VerbT _Adv
-1	_VerbT	VerbT _Subconj
-1	_VerbT	VerbT _WhDet
-
-
-
-
-
-1	_Vbd	Vbd
-1	_Vbd	Vbd _Det
-1	_Vbd	Vbd _Misc
-1	_Vbd	Vbd _Noun
-1	_Vbd	Vbd _Prep
-1	_Vbd	Vbd _Proper
-1	_Vbd	Vbd _Vbd
-1	_Vbd	Vbd _Vbg
-1	_Vbd	Vbd _Vbn
-1	_Vbd	Vbd _Adj
-1	_Vbd	Vbd _AdjComp
-1	_Vbd	Vbd _AdjSuper
-1	_Vbd	Vbd _ProperObj
-1	_Vbd	Vbd _PAUSE
-1	_Vbd	Vbd _Nouns
-1	_Vbd	Vbd _Vb
-1	_Vbd	Vbd _Vbz
-1	_Vbd	Vbd _Vbzs
-1	_Vbd	Vbd _Prp
-1	_Vbd	Vbd _Prps
-1	_Vbd	Vbd _DoDoes
-1	_Vbd	Vbd _WhAdv
-1	_Vbd	Vbd _CD
-1	_Vbd	Vbd _Modal
-1	_Vbd	Vbd _Adv
-1	_Vbd	Vbd _Subconj
-1	_Vbd	Vbd _WhDet
-
-
-
-
-1	_Vbn	Vbn
-1	_Vbn	Vbn _Det
-1	_Vbn	Vbn _Misc
-1	_Vbn	Vbn _Noun
-1	_Vbn	Vbn _Prep
-1	_Vbn	Vbn _Proper
-1	_Vbn	Vbn _Vbd
-1	_Vbn	Vbn _Vbg
-1	_Vbn	Vbn _Vbn
-1	_Vbn	Vbn _Adj
-1	_Vbn	Vbn _AdjComp
-1	_Vbn	Vbn _AdjSuper
-1	_Vbn	Vbn _ProperObj
-1	_Vbn	Vbn _PAUSE
-1	_Vbn	Vbn _Nouns
-1	_Vbn	Vbn _Vb
-1	_Vbn	Vbn _Vbz
-1	_Vbn	Vbn _Vbzs
-1	_Vbn	Vbn _Prp
-1	_Vbn	Vbn _Prps
-1	_Vbn	Vbn _DoDoes
-1	_Vbn	Vbn _WhAdv
-1	_Vbn	Vbn _CD
-1	_Vbn	Vbn _Modal
-1	_Vbn	Vbn _Adv
-1	_Vbn	Vbn _Subconj
-1	_Vbn	Vbn _WhDet
-
-
-
-
-1	_Vbg	Vbg
-1	_Vbg	Vbg _Det
-1	_Vbg	Vbg _Misc
-1	_Vbg	Vbg _Noun
-1	_Vbg	Vbg _Prep
-1	_Vbg	Vbg _Proper
-1	_Vbg	Vbg _Vbd
-1	_Vbg	Vbg _Vbg
-1	_Vbg	Vbg _Vbn
-1	_Vbg	Vbg _Adj
-1	_Vbg	Vbg _AdjComp
-1	_Vbg	Vbg _AdjSuper
-1	_Vbg	Vbg _ProperObj
-1	_Vbg	Vbg _PAUSE
-1	_Vbg	Vbg _Nouns
-1	_Vbg	Vbg _Vb
-1	_Vbg	Vbg _Vbz
-1	_Vbg	Vbg _Vbzs
-1	_Vbg	Vbg _Prp
-1	_Vbg	Vbg _Prps
-1	_Vbg	Vbg _DoDoes
-1	_Vbg	Vbg _WhAdv
-1	_Vbg	Vbg _CD
-1	_Vbg	Vbg _Modal
-1	_Vbg	Vbg _Adv
-1	_Vbg	Vbg _Subconj
-1	_Vbg	Vbg _WhDet
-
-
-
-
+1	S2
+1	S2	_Adj
+1	S2	_AdjComp
+1	S2	_AdjSuper
+1	S2	_Adv
+1	S2	_CD
+1	S2	_Det
+1	S2	_DoDoes
+1	S2	_EOS
+1	S2	_Misc
+1	S2	_Modal
+1	S2	_Noun
+1	S2	_Nouns
+1	S2	_PAUSE
+1	S2	_Prep
+1	S2	_Proper
+1	S2	_ProperObj
+1	S2	_Prp
+1	S2	_Prps
+1	S2	_Subconj
+1	S2	_Vb
+1	S2	_Vbd
+1	S2	_Vbg
+1	S2	_Vbn
+1	S2	_Vbz
+1	S2	_Vbzs
+1	S2	_VerbT
+1	S2	_WhAdv
+1	S2	_WhDet
 1	_Adj	Adj
-1	_Adj	Adj _Det
-1	_Adj	Adj _Misc
-1	_Adj	Adj _Noun
-1	_Adj	Adj _Prep
-1	_Adj	Adj _Proper
-1	_Adj	Adj _Vbd
-1	_Adj	Adj _Vbg
-1	_Adj	Adj _Vbn
 1	_Adj	Adj _Adj
 1	_Adj	Adj _AdjComp
 1	_Adj	Adj _AdjSuper
-1	_Adj	Adj _ProperObj
-1	_Adj	Adj _PAUSE
+1	_Adj	Adj _Adv
+1	_Adj	Adj _CD
+1	_Adj	Adj _Det
+1	_Adj	Adj _DoDoes
+1	_Adj	Adj _EOS
+1	_Adj	Adj _Misc
+1	_Adj	Adj _Modal
+1	_Adj	Adj _Noun
 1	_Adj	Adj _Nouns
-1	_Adj	Adj _Vb
-1	_Adj	Adj _Vbz
-1	_Adj	Adj _Vbzs
+1	_Adj	Adj _PAUSE
+1	_Adj	Adj _Prep
+1	_Adj	Adj _Proper
+1	_Adj	Adj _ProperObj
 1	_Adj	Adj _Prp
 1	_Adj	Adj _Prps
-1	_Adj	Adj _DoDoes
-1	_Adj	Adj _WhAdv
-1	_Adj	Adj _CD
-1	_Adj	Adj _Modal
-1	_Adj	Adj _Adv
 1	_Adj	Adj _Subconj
+1	_Adj	Adj _Vb
+1	_Adj	Adj _Vbd
+1	_Adj	Adj _Vbg
+1	_Adj	Adj _Vbn
+1	_Adj	Adj _Vbz
+1	_Adj	Adj _Vbzs
+1	_Adj	Adj _VerbT
+1	_Adj	Adj _WhAdv
 1	_Adj	Adj _WhDet
-
-
-
-
 1	_AdjComp	AdjComp
-1	_AdjComp	AdjComp _Det
-1	_AdjComp	AdjComp _Misc
-1	_AdjComp	AdjComp _Noun
-1	_AdjComp	AdjComp _Prep
-1	_AdjComp	AdjComp _Proper
-1	_AdjComp	AdjComp _Vbd
-1	_AdjComp	AdjComp _Vbg
-1	_AdjComp	AdjComp _Vbn
 1	_AdjComp	AdjComp _Adj
 1	_AdjComp	AdjComp _AdjComp
 1	_AdjComp	AdjComp _AdjSuper
-1	_AdjComp	AdjComp _ProperObj
-1	_AdjComp	AdjComp _PAUSE
+1	_AdjComp	AdjComp _Adv
+1	_AdjComp	AdjComp _CD
+1	_AdjComp	AdjComp _Det
+1	_AdjComp	AdjComp _DoDoes
+1	_AdjComp	AdjComp _EOS
+1	_AdjComp	AdjComp _Misc
+1	_AdjComp	AdjComp _Modal
+1	_AdjComp	AdjComp _Noun
 1	_AdjComp	AdjComp _Nouns
-1	_AdjComp	AdjComp _Vb
-1	_AdjComp	AdjComp _Vbz
-1	_AdjComp	AdjComp _Vbzs
+1	_AdjComp	AdjComp _PAUSE
+1	_AdjComp	AdjComp _Prep
+1	_AdjComp	AdjComp _Proper
+1	_AdjComp	AdjComp _ProperObj
 1	_AdjComp	AdjComp _Prp
 1	_AdjComp	AdjComp _Prps
-1	_AdjComp	AdjComp _DoDoes
-1	_AdjComp	AdjComp _WhAdv
-1	_AdjComp	AdjComp _CD
-1	_AdjComp	AdjComp _Modal
-1	_AdjComp	AdjComp _Adv
 1	_AdjComp	AdjComp _Subconj
+1	_AdjComp	AdjComp _Vb
+1	_AdjComp	AdjComp _Vbd
+1	_AdjComp	AdjComp _Vbg
+1	_AdjComp	AdjComp _Vbn
+1	_AdjComp	AdjComp _Vbz
+1	_AdjComp	AdjComp _Vbzs
+1	_AdjComp	AdjComp _VerbT
+1	_AdjComp	AdjComp _WhAdv
 1	_AdjComp	AdjComp _WhDet
-
-
-
-
 1	_AdjSuper	AdjSuper
-1	_AdjSuper	AdjSuper _Det
-1	_AdjSuper	AdjSuper _Misc
-1	_AdjSuper	AdjSuper _Noun
-1	_AdjSuper	AdjSuper _Prep
-1	_AdjSuper	AdjSuper _Proper
-1	_AdjSuper	AdjSuper _Vbd
-1	_AdjSuper	AdjSuper _Vbg
-1	_AdjSuper	AdjSuper _Vbn
 1	_AdjSuper	AdjSuper _Adj
 1	_AdjSuper	AdjSuper _AdjComp
 1	_AdjSuper	AdjSuper _AdjSuper
-1	_AdjSuper	AdjSuper _ProperObj
-1	_AdjSuper	AdjSuper _PAUSE
+1	_AdjSuper	AdjSuper _Adv
+1	_AdjSuper	AdjSuper _CD
+1	_AdjSuper	AdjSuper _Det
+1	_AdjSuper	AdjSuper _DoDoes
+1	_AdjSuper	AdjSuper _EOS
+1	_AdjSuper	AdjSuper _Misc
+1	_AdjSuper	AdjSuper _Modal
+1	_AdjSuper	AdjSuper _Noun
 1	_AdjSuper	AdjSuper _Nouns
-1	_AdjSuper	AdjSuper _Vb
-1	_AdjSuper	AdjSuper _Vbz
-1	_AdjSuper	AdjSuper _Vbzs
+1	_AdjSuper	AdjSuper _PAUSE
+1	_AdjSuper	AdjSuper _Prep
+1	_AdjSuper	AdjSuper _Proper
+1	_AdjSuper	AdjSuper _ProperObj
 1	_AdjSuper	AdjSuper _Prp
 1	_AdjSuper	AdjSuper _Prps
-1	_AdjSuper	AdjSuper _DoDoes
-1	_AdjSuper	AdjSuper _WhAdv
-1	_AdjSuper	AdjSuper _CD
-1	_AdjSuper	AdjSuper _Modal
-1	_AdjSuper	AdjSuper _Adv
 1	_AdjSuper	AdjSuper _Subconj
+1	_AdjSuper	AdjSuper _Vb
+1	_AdjSuper	AdjSuper _Vbd
+1	_AdjSuper	AdjSuper _Vbg
+1	_AdjSuper	AdjSuper _Vbn
+1	_AdjSuper	AdjSuper _Vbz
+1	_AdjSuper	AdjSuper _Vbzs
+1	_AdjSuper	AdjSuper _VerbT
+1	_AdjSuper	AdjSuper _WhAdv
 1	_AdjSuper	AdjSuper _WhDet
-
-
-
-
-
-1	_ProperObj	ProperObj
-1	_ProperObj	ProperObj _Det
-1	_ProperObj	ProperObj _Misc
-1	_ProperObj	ProperObj _Noun
-1	_ProperObj	ProperObj _Prep
-1	_ProperObj	ProperObj _Proper
-1	_ProperObj	ProperObj _VerbT
-1	_ProperObj	ProperObj _Vbd
-1	_ProperObj	ProperObj _Vbg
-1	_ProperObj	ProperObj _Vbn
-1	_ProperObj	ProperObj _Adj
-1	_ProperObj	ProperObj _AdjComp
-1	_ProperObj	ProperObj _AdjSuper
-1	_ProperObj	ProperObj _ProperObj
-1	_ProperObj	ProperObj _PAUSE
-1	_ProperObj	ProperObj _Nouns
-1	_ProperObj	ProperObj _Vb
-1	_ProperObj	ProperObj _Vbz
-1	_ProperObj	ProperObj _Vbzs
-1	_ProperObj	ProperObj _Prp
-1	_ProperObj	ProperObj _Prps
-1	_ProperObj	ProperObj _DoDoes
-1	_ProperObj	ProperObj _WhAdv
-1	_ProperObj	ProperObj _CD
-1	_ProperObj	ProperObj _Modal
-1	_ProperObj	ProperObj _Adv
-1	_ProperObj	ProperObj _Subconj
-1	_ProperObj	ProperObj _WhDet
-
-
-
-
-1	_PAUSE	PAUSE
-1	_PAUSE	PAUSE _Det
-1	_PAUSE	PAUSE _Misc
-1	_PAUSE	PAUSE _Noun
-1	_PAUSE	PAUSE _Prep
-1	_PAUSE	PAUSE _Proper
-1	_PAUSE	PAUSE _VerbT
-1	_PAUSE	PAUSE _Vbd
-1	_PAUSE	PAUSE _Vbg
-1	_PAUSE	PAUSE _Vbn
-1	_PAUSE	PAUSE _Adj
-1	_PAUSE	PAUSE _AdjComp
-1	_PAUSE	PAUSE _AdjSuper
-1	_PAUSE	PAUSE _ProperObj
-1	_PAUSE	PAUSE _PAUSE
-1	_PAUSE	PAUSE _Nouns
-1	_PAUSE	PAUSE _Vb
-1	_PAUSE	PAUSE _Vbz
-1	_PAUSE	PAUSE _Vbzs
-1	_PAUSE	PAUSE _Prp
-1	_PAUSE	PAUSE _Prps
-1	_PAUSE	PAUSE _DoDoes
-1	_PAUSE	PAUSE _WhAdv
-1	_PAUSE	PAUSE _CD
-1	_PAUSE	PAUSE _Modal
-1	_PAUSE	PAUSE _Subconj
-1	_PAUSE	PAUSE _WhDet
-
-1	_Nouns	Nouns
-1	_Nouns	Nouns _Det
-1	_Nouns	Nouns _Misc
-1	_Nouns	Nouns _Noun
-1	_Nouns	Nouns _Prep
-1	_Nouns	Nouns _Proper
-1	_Nouns	Nouns _VerbT
-1	_Nouns	Nouns _Vbd
-1	_Nouns	Nouns _Vbg
-1	_Nouns	Nouns _Vbn
-1	_Nouns	Nouns _Adj
-1	_Nouns	Nouns _AdjComp
-1	_Nouns	Nouns _AdjSuper
-1	_Nouns	Nouns _ProperObj
-1	_Nouns	Nouns _PAUSE
-1	_Nouns	Nouns _Nouns
-1	_Nouns	Nouns _Vb
-1	_Nouns	Nouns _Vbz
-1	_Nouns	Nouns _Vbzs
-1	_Nouns	Nouns _Prp
-1	_Nouns	Nouns _Prps
-1	_Nouns	Nouns _DoDoes
-1	_Nouns	Nouns _WhAdv
-1	_Nouns	Nouns _CD
-1	_Nouns	Nouns _Modal
-1	_Nouns	Nouns _Adv
-1	_Nouns	Nouns _Subconj
-1	_Nouns	Nouns _WhDet
-
-
-
-
-1	_Vb	Vb
-1	_Vb	Vb _Det
-1	_Vb	Vb _Misc
-1	_Vb	Vb _Noun
-1	_Vb	Vb _Prep
-1	_Vb	Vb _Proper
-1	_Vb	Vb _VerbT
-1	_Vb	Vb _Vbd
-1	_Vb	Vb _Vbg
-1	_Vb	Vb _Vbn
-1	_Vb	Vb _Adj
-1	_Vb	Vb _AdjComp
-1	_Vb	Vb _AdjSuper
-1	_Vb	Vb _ProperObj
-1	_Vb	Vb _PAUSE
-1	_Vb	Vb _Nouns
-1	_Vb	Vb _Vb
-1	_Vb	Vb _Vbz
-1	_Vb	Vb _Vbzs
-1	_Vb	Vb _Prp
-1	_Vb	Vb _Prps
-1	_Vb	Vb _DoDoes
-1	_Vb	Vb _WhAdv
-1	_Vb	Vb _CD
-1	_Vb	Vb _Modal
-1	_Vb	Vb _Adv
-1	_Vb	Vb _Subconj
-1	_Vb	Vb _WhDet
-
-
-
-
-1	_Vbz	Vbz
-1	_Vbz	Vbz _Det
-1	_Vbz	Vbz _Misc
-1	_Vbz	Vbz _Noun
-1	_Vbz	Vbz _Prep
-1	_Vbz	Vbz _Proper
-1	_Vbz	Vbz _VerbT
-1	_Vbz	Vbz _Vbd
-1	_Vbz	Vbz _Vbg
-1	_Vbz	Vbz _Vbn
-1	_Vbz	Vbz _Adj
-1	_Vbz	Vbz _AdjComp
-1	_Vbz	Vbz _AdjSuper
-1	_Vbz	Vbz _ProperObj
-1	_Vbz	Vbz _PAUSE
-1	_Vbz	Vbz _Nouns
-1	_Vbz	Vbz _Vb
-1	_Vbz	Vbz _Vbz
-1	_Vbz	Vbz _Vbzs
-1	_Vbz	Vbz _Prp
-1	_Vbz	Vbz _Prps
-1	_Vbz	Vbz _DoDoes
-1	_Vbz	Vbz _WhAdv
-1	_Vbz	Vbz _CD
-1	_Vbz	Vbz _Modal
-1	_Vbz	Vbz _Adv
-1	_Vbz	Vbz _Subconj
-1	_Vbz	Vbz _WhDet
-
-
-
-
-
-1	_Vbzs	Vbzs
-1	_Vbzs	Vbzs _Det
-1	_Vbzs	Vbzs _Misc
-1	_Vbzs	Vbzs _Noun
-1	_Vbzs	Vbzs _Prep
-1	_Vbzs	Vbzs _Proper
-1	_Vbzs	Vbzs _VerbT
-1	_Vbzs	Vbzs _Vbd
-1	_Vbzs	Vbzs _Vbg
-1	_Vbzs	Vbzs _Vbn
-1	_Vbzs	Vbzs _Adj
-1	_Vbzs	Vbzs _AdjComp
-1	_Vbzs	Vbzs _AdjSuper
-1	_Vbzs	Vbzs _ProperObj
-1	_Vbzs	Vbzs _PAUSE
-1	_Vbzs	Vbzs _Nouns
-1	_Vbzs	Vbzs _Vb
-1	_Vbzs	Vbzs _Vbz
-1	_Vbzs	Vbzs _Vbzs
-1	_Vbzs	Vbzs _Prp
-1	_Vbzs	Vbzs _Prps
-1	_Vbzs	Vbzs _DoDoes
-1	_Vbzs	Vbzs _WhAdv
-1	_Vbzs	Vbzs _CD
-1	_Vbzs	Vbzs _Modal
-1	_Vbzs	Vbzs _Adv
-1	_Vbzs	Vbzs _Subconj
-1	_Vbzs	Vbzs _WhDet
-
-
-
-
-1	_Prp	Prp
-1	_Prp	Prp _Det
-1	_Prp	Prp _Misc
-1	_Prp	Prp _Noun
-1	_Prp	Prp _Prep
-1	_Prp	Prp _Proper
-1	_Prp	Prp _VerbT
-1	_Prp	Prp _Vbd
-1	_Prp	Prp _Vbg
-1	_Prp	Prp _Vbn
-1	_Prp	Prp _Adj
-1	_Prp	Prp _AdjComp
-1	_Prp	Prp _AdjSuper
-1	_Prp	Prp _ProperObj
-1	_Prp	Prp _PAUSE
-1	_Prp	Prp _Nouns
-1	_Prp	Prp _Vb
-1	_Prp	Prp _Vbz
-1	_Prp	Prp _Vbzs
-1	_Prp	Prp _Prp
-1	_Prp	Prp _Prps
-1	_Prp	Prp _DoDoes
-1	_Prp	Prp _WhAdv
-1	_Prp	Prp _CD
-1	_Prp	Prp _Modal
-1	_Prp	Prp _Adv
-1	_Prp	Prp _Subconj
-1	_Prp	Prp _WhDet
-
-
-
-
-1	_Prps	Prps
-1	_Prps	Prps _Det
-1	_Prps	Prps _Misc
-1	_Prps	Prps _Noun
-1	_Prps	Prps _Prep
-1	_Prps	Prps _Proper
-1	_Prps	Prps _VerbT
-1	_Prps	Prps _Vbd
-1	_Prps	Prps _Vbg
-1	_Prps	Prps _Vbn
-1	_Prps	Prps _Adj
-1	_Prps	Prps _AdjComp
-1	_Prps	Prps _AdjSuper
-1	_Prps	Prps _ProperObj
-1	_Prps	Prps _PAUSE
-1	_Prps	Prps _Nouns
-1	_Prps	Prps _Vb
-1	_Prps	Prps _Vbz
-1	_Prps	Prps _Vbzs
-1	_Prps	Prps _Prp
-1	_Prps	Prps _Prps
-1	_Prps	Prps _DoDoes
-1	_Prps	Prps _WhAdv
-1	_Prps	Prps _CD
-1	_Prps	Prps _Modal
-1	_Prps	Prps _Adv
-1	_Prps	Prps _Subconj
-1	_Prps	Prps _WhDet
-
-
-
-
-1	_DoDoes	DoDoes
-1	_DoDoes	DoDoes _Det
-1	_DoDoes	DoDoes _Misc
-1	_DoDoes	DoDoes _Noun
-1	_DoDoes	DoDoes _Prep
-1	_DoDoes	DoDoes _Proper
-1	_DoDoes	DoDoes _VerbT
-1	_DoDoes	DoDoes _Vbd
-1	_DoDoes	DoDoes _Vbg
-1	_DoDoes	DoDoes _Vbn
-1	_DoDoes	DoDoes _Adj
-1	_DoDoes	DoDoes _AdjComp
-1	_DoDoes	DoDoes _AdjSuper
-1	_DoDoes	DoDoes _ProperObj
-1	_DoDoes	DoDoes _PAUSE
-1	_DoDoes	DoDoes _Nouns
-1	_DoDoes	DoDoes _Vb
-1	_DoDoes	DoDoes _Vbz
-1	_DoDoes	DoDoes _Vbzs
-1	_DoDoes	DoDoes _Prp
-1	_DoDoes	DoDoes _Prps
-1	_DoDoes	DoDoes _DoDoes
-1	_DoDoes	DoDoes _WhAdv
-1	_DoDoes	DoDoes _CD
-1	_DoDoes	DoDoes _Modal
-1	_DoDoes	DoDoes _Adv
-1	_DoDoes	DoDoes _Subconj
-1	_DoDoes	DoDoes _WhDet
-
-
-
-
-1	_WhAdv	WhAdv
-1	_WhAdv	WhAdv _Det
-1	_WhAdv	WhAdv _Misc
-1	_WhAdv	WhAdv _Noun
-1	_WhAdv	WhAdv _Prep
-1	_WhAdv	WhAdv _Proper
-1	_WhAdv	WhAdv _VerbT
-1	_WhAdv	WhAdv _Vbd
-1	_WhAdv	WhAdv _Vbg
-1	_WhAdv	WhAdv _Vbn
-1	_WhAdv	WhAdv _Adj
-1	_WhAdv	WhAdv _AdjComp
-1	_WhAdv	WhAdv _AdjSuper
-1	_WhAdv	WhAdv _ProperObj
-1	_WhAdv	WhAdv _PAUSE
-1	_WhAdv	WhAdv _Nouns
-1	_WhAdv	WhAdv _Vb
-1	_WhAdv	WhAdv _Vbz
-1	_WhAdv	WhAdv _Vbzs
-1	_WhAdv	WhAdv _Prp
-1	_WhAdv	WhAdv _Prps
-1	_WhAdv	WhAdv _DoDoes
-1	_WhAdv	WhAdv _WhAdv
-1	_WhAdv	WhAdv _CD
-1	_WhAdv	WhAdv _Modal
-1	_WhAdv	WhAdv _Adv
-1	_WhAdv	WhAdv _Subconj
-1	_WhAdv	WhAdv _WhDet
-
-
-
-
-
-1	_CD	CD
-1	_CD	CD _Det
-1	_CD	CD _Misc
-1	_CD	CD _Noun
-1	_CD	CD _Prep
-1	_CD	CD _Proper
-1	_CD	CD _VerbT
-1	_CD	CD _Vbd
-1	_CD	CD _Vbg
-1	_CD	CD _Vbn
-1	_CD	CD _Adj
-1	_CD	CD _AdjComp
-1	_CD	CD _AdjSuper
-1	_CD	CD _ProperObj
-1	_CD	CD _PAUSE
-1	_CD	CD _Nouns
-1	_CD	CD _Vb
-1	_CD	CD _Vbz
-1	_CD	CD _Vbzs
-1	_CD	CD _Prp
-1	_CD	CD _Prps
-1	_CD	CD _DoDoes
-1	_CD	CD _WhAdv
-1	_CD	CD _CD
-1	_CD	CD _Modal
-1	_CD	CD _Adv
-1	_CD	CD _Subconj
-1	_CD	CD _WhDet
-
-
-1	_Modal	Modal
-1	_Modal	Modal _Det
-1	_Modal	Modal _Misc
-1	_Modal	Modal _Noun
-1	_Modal	Modal _Prep
-1	_Modal	Modal _Proper
-1	_Modal	Modal _VerbT
-1	_Modal	Modal _Vbd
-1	_Modal	Modal _Vbg
-1	_Modal	Modal _Vbn
-1	_Modal	Modal _Adj
-1	_Modal	Modal _AdjComp
-1	_Modal	Modal _AdjSuper
-1	_Modal	Modal _ProperObj
-1	_Modal	Modal _PAUSE
-1	_Modal	Modal _Nouns
-1	_Modal	Modal _Vb
-1	_Modal	Modal _Vbz
-1	_Modal	Modal _Vbzs
-1	_Modal	Modal _Prp
-1	_Modal	Modal _Prps
-1	_Modal	Modal _DoDoes
-1	_Modal	Modal _WhAdv
-1	_Modal	Modal _CD
-1	_Modal	Modal _Modal
-1	_Modal	Modal _Adv
-1	_Modal	Modal _Subconj
-1	_Modal	Modal _WhDet
-
 1	_Adv	Adv
-1	_Adv	Adv _Det
-1	_Adv	Adv _Misc
-1	_Adv	Adv _Noun
-1	_Adv	Adv _Prep
-1	_Adv	Adv _Proper
-1	_Adv	Adv _VerbT
-1	_Adv	Adv _Vbd
-1	_Adv	Adv _Vbg
-1	_Adv	Adv _Vbn
 1	_Adv	Adv _Adj
 1	_Adv	Adv _AdjComp
 1	_Adv	Adv _AdjSuper
-1	_Adv	Adv _ProperObj
-1	_Adv	Adv _PAUSE
+1	_Adv	Adv _Adv
+1	_Adv	Adv _CD
+1	_Adv	Adv _Det
+1	_Adv	Adv _DoDoes
+1	_Adv	Adv _EOS
+1	_Adv	Adv _Misc
+1	_Adv	Adv _Modal
+1	_Adv	Adv _Noun
 1	_Adv	Adv _Nouns
-1	_Adv	Adv _Vb
-1	_Adv	Adv _Vbz
-1	_Adv	Adv _Vbzs
+1	_Adv	Adv _PAUSE
+1	_Adv	Adv _Prep
+1	_Adv	Adv _Proper
+1	_Adv	Adv _ProperObj
 1	_Adv	Adv _Prp
 1	_Adv	Adv _Prps
-1	_Adv	Adv _DoDoes
-1	_Adv	Adv _WhAdv
-1	_Adv	Adv _CD
-1	_Adv	Adv _Modal
-1	_Adv	Adv _Adv
 1	_Adv	Adv _Subconj
+1	_Adv	Adv _Vb
+1	_Adv	Adv _Vbd
+1	_Adv	Adv _Vbg
+1	_Adv	Adv _Vbn
+1	_Adv	Adv _Vbz
+1	_Adv	Adv _Vbzs
+1	_Adv	Adv _VerbT
+1	_Adv	Adv _WhAdv
 1	_Adv	Adv _WhDet
-
-
-
+1	_CD	CD
+1	_CD	CD _Adj
+1	_CD	CD _AdjComp
+1	_CD	CD _AdjSuper
+1	_CD	CD _Adv
+1	_CD	CD _CD
+1	_CD	CD _Det
+1	_CD	CD _DoDoes
+1	_CD	CD _EOS
+1	_CD	CD _Misc
+1	_CD	CD _Modal
+1	_CD	CD _Noun
+1	_CD	CD _Nouns
+1	_CD	CD _PAUSE
+1	_CD	CD _Prep
+1	_CD	CD _Proper
+1	_CD	CD _ProperObj
+1	_CD	CD _Prp
+1	_CD	CD _Prps
+1	_CD	CD _Subconj
+1	_CD	CD _Vb
+1	_CD	CD _Vbd
+1	_CD	CD _Vbg
+1	_CD	CD _Vbn
+1	_CD	CD _Vbz
+1	_CD	CD _Vbzs
+1	_CD	CD _VerbT
+1	_CD	CD _WhAdv
+1	_CD	CD _WhDet
+1	_Det	Det
+1	_Det	Det _Adj
+1	_Det	Det _AdjComp
+1	_Det	Det _AdjSuper
+1	_Det	Det _Adv
+1	_Det	Det _CD
+1	_Det	Det _Det
+1	_Det	Det _DoDoes
+1	_Det	Det _EOS
+1	_Det	Det _Misc
+1	_Det	Det _Modal
+1	_Det	Det _Noun
+1	_Det	Det _Nouns
+1	_Det	Det _PAUSE
+1	_Det	Det _Prep
+1	_Det	Det _Proper
+1	_Det	Det _ProperObj
+1	_Det	Det _Prp
+1	_Det	Det _Prps
+1	_Det	Det _Subconj
+1	_Det	Det _Vb
+1	_Det	Det _Vbd
+1	_Det	Det _Vbg
+1	_Det	Det _Vbn
+1	_Det	Det _Vbz
+1	_Det	Det _Vbzs
+1	_Det	Det _VerbT
+1	_Det	Det _WhAdv
+1	_Det	Det _WhDet
+1	_DoDoes	DoDoes
+1	_DoDoes	DoDoes _Adj
+1	_DoDoes	DoDoes _AdjComp
+1	_DoDoes	DoDoes _AdjSuper
+1	_DoDoes	DoDoes _Adv
+1	_DoDoes	DoDoes _CD
+1	_DoDoes	DoDoes _Det
+1	_DoDoes	DoDoes _DoDoes
+1	_DoDoes	DoDoes _EOS
+1	_DoDoes	DoDoes _Misc
+1	_DoDoes	DoDoes _Modal
+1	_DoDoes	DoDoes _Noun
+1	_DoDoes	DoDoes _Nouns
+1	_DoDoes	DoDoes _PAUSE
+1	_DoDoes	DoDoes _Prep
+1	_DoDoes	DoDoes _Proper
+1	_DoDoes	DoDoes _ProperObj
+1	_DoDoes	DoDoes _Prp
+1	_DoDoes	DoDoes _Prps
+1	_DoDoes	DoDoes _Subconj
+1	_DoDoes	DoDoes _Vb
+1	_DoDoes	DoDoes _Vbd
+1	_DoDoes	DoDoes _Vbg
+1	_DoDoes	DoDoes _Vbn
+1	_DoDoes	DoDoes _Vbz
+1	_DoDoes	DoDoes _Vbzs
+1	_DoDoes	DoDoes _VerbT
+1	_DoDoes	DoDoes _WhAdv
+1	_DoDoes	DoDoes _WhDet
+1	_EOS	EOS
+1	_EOS	EOS _Adj
+1	_EOS	EOS _AdjComp
+1	_EOS	EOS _AdjSuper
+1	_EOS	EOS _Adv
+1	_EOS	EOS _CD
+1	_EOS	EOS _Det
+1	_EOS	EOS _DoDoes
+1	_EOS	EOS _EOS
+1	_EOS	EOS _Misc
+1	_EOS	EOS _Modal
+1	_EOS	EOS _Noun
+1	_EOS	EOS _Nouns
+1	_EOS	EOS _PAUSE
+1	_EOS	EOS _Prep
+1	_EOS	EOS _Proper
+1	_EOS	EOS _ProperObj
+1	_EOS	EOS _Prp
+1	_EOS	EOS _Prps
+1	_EOS	EOS _Subconj
+1	_EOS	EOS _Vb
+1	_EOS	EOS _Vbd
+1	_EOS	EOS _Vbg
+1	_EOS	EOS _Vbn
+1	_EOS	EOS _Vbz
+1	_EOS	EOS _Vbzs
+1	_EOS	EOS _VerbT
+1	_EOS	EOS _WhAdv
+1	_EOS	EOS _WhDet
+1	_Misc	Misc
+1	_Misc	Misc _Adj
+1	_Misc	Misc _AdjComp
+1	_Misc	Misc _AdjSuper
+1	_Misc	Misc _Adv
+1	_Misc	Misc _CD
+1	_Misc	Misc _Det
+1	_Misc	Misc _DoDoes
+1	_Misc	Misc _EOS
+1	_Misc	Misc _Misc
+1	_Misc	Misc _Modal
+1	_Misc	Misc _Noun
+1	_Misc	Misc _Nouns
+1	_Misc	Misc _PAUSE
+1	_Misc	Misc _Prep
+1	_Misc	Misc _Proper
+1	_Misc	Misc _ProperObj
+1	_Misc	Misc _Prp
+1	_Misc	Misc _Prps
+1	_Misc	Misc _Subconj
+1	_Misc	Misc _Vb
+1	_Misc	Misc _Vbd
+1	_Misc	Misc _Vbg
+1	_Misc	Misc _Vbn
+1	_Misc	Misc _Vbz
+1	_Misc	Misc _Vbzs
+1	_Misc	Misc _VerbT
+1	_Misc	Misc _WhAdv
+1	_Misc	Misc _WhDet
+1	_Modal	Modal
+1	_Modal	Modal _Adj
+1	_Modal	Modal _AdjComp
+1	_Modal	Modal _AdjSuper
+1	_Modal	Modal _Adv
+1	_Modal	Modal _CD
+1	_Modal	Modal _Det
+1	_Modal	Modal _DoDoes
+1	_Modal	Modal _EOS
+1	_Modal	Modal _Misc
+1	_Modal	Modal _Modal
+1	_Modal	Modal _Noun
+1	_Modal	Modal _Nouns
+1	_Modal	Modal _PAUSE
+1	_Modal	Modal _Prep
+1	_Modal	Modal _Proper
+1	_Modal	Modal _ProperObj
+1	_Modal	Modal _Prp
+1	_Modal	Modal _Prps
+1	_Modal	Modal _Subconj
+1	_Modal	Modal _Vb
+1	_Modal	Modal _Vbd
+1	_Modal	Modal _Vbg
+1	_Modal	Modal _Vbn
+1	_Modal	Modal _Vbz
+1	_Modal	Modal _Vbzs
+1	_Modal	Modal _VerbT
+1	_Modal	Modal _WhAdv
+1	_Modal	Modal _WhDet
+1	_Noun	Noun
+1	_Noun	Noun _Adj
+1	_Noun	Noun _AdjComp
+1	_Noun	Noun _AdjSuper
+1	_Noun	Noun _Adv
+1	_Noun	Noun _CD
+1	_Noun	Noun _Det
+1	_Noun	Noun _DoDoes
+1	_Noun	Noun _EOS
+1	_Noun	Noun _Misc
+1	_Noun	Noun _Modal
+1	_Noun	Noun _Noun
+1	_Noun	Noun _Nouns
+1	_Noun	Noun _PAUSE
+1	_Noun	Noun _Prep
+1	_Noun	Noun _Proper
+1	_Noun	Noun _ProperObj
+1	_Noun	Noun _Prp
+1	_Noun	Noun _Prps
+1	_Noun	Noun _Subconj
+1	_Noun	Noun _Vb
+1	_Noun	Noun _Vbd
+1	_Noun	Noun _Vbg
+1	_Noun	Noun _Vbn
+1	_Noun	Noun _Vbz
+1	_Noun	Noun _Vbzs
+1	_Noun	Noun _VerbT
+1	_Noun	Noun _WhAdv
+1	_Noun	Noun _WhDet
+1	_Nouns	Nouns
+1	_Nouns	Nouns _Adj
+1	_Nouns	Nouns _AdjComp
+1	_Nouns	Nouns _AdjSuper
+1	_Nouns	Nouns _Adv
+1	_Nouns	Nouns _CD
+1	_Nouns	Nouns _Det
+1	_Nouns	Nouns _DoDoes
+1	_Nouns	Nouns _EOS
+1	_Nouns	Nouns _Misc
+1	_Nouns	Nouns _Modal
+1	_Nouns	Nouns _Noun
+1	_Nouns	Nouns _Nouns
+1	_Nouns	Nouns _PAUSE
+1	_Nouns	Nouns _Prep
+1	_Nouns	Nouns _Proper
+1	_Nouns	Nouns _ProperObj
+1	_Nouns	Nouns _Prp
+1	_Nouns	Nouns _Prps
+1	_Nouns	Nouns _Subconj
+1	_Nouns	Nouns _Vb
+1	_Nouns	Nouns _Vbd
+1	_Nouns	Nouns _Vbg
+1	_Nouns	Nouns _Vbn
+1	_Nouns	Nouns _Vbz
+1	_Nouns	Nouns _Vbzs
+1	_Nouns	Nouns _VerbT
+1	_Nouns	Nouns _WhAdv
+1	_Nouns	Nouns _WhDet
+1	_PAUSE	PAUSE
+1	_PAUSE	PAUSE _Adj
+1	_PAUSE	PAUSE _AdjComp
+1	_PAUSE	PAUSE _AdjSuper
+1	_PAUSE	PAUSE _Adv
+1	_PAUSE	PAUSE _CD
+1	_PAUSE	PAUSE _Det
+1	_PAUSE	PAUSE _DoDoes
+1	_PAUSE	PAUSE _EOS
+1	_PAUSE	PAUSE _Misc
+1	_PAUSE	PAUSE _Modal
+1	_PAUSE	PAUSE _Noun
+1	_PAUSE	PAUSE _Nouns
+1	_PAUSE	PAUSE _PAUSE
+1	_PAUSE	PAUSE _Prep
+1	_PAUSE	PAUSE _Proper
+1	_PAUSE	PAUSE _ProperObj
+1	_PAUSE	PAUSE _Prp
+1	_PAUSE	PAUSE _Prps
+1	_PAUSE	PAUSE _Subconj
+1	_PAUSE	PAUSE _Vb
+1	_PAUSE	PAUSE _Vbd
+1	_PAUSE	PAUSE _Vbg
+1	_PAUSE	PAUSE _Vbn
+1	_PAUSE	PAUSE _Vbz
+1	_PAUSE	PAUSE _Vbzs
+1	_PAUSE	PAUSE _VerbT
+1	_PAUSE	PAUSE _WhAdv
+1	_PAUSE	PAUSE _WhDet
+1	_Prep	Prep
+1	_Prep	Prep _Adj
+1	_Prep	Prep _AdjComp
+1	_Prep	Prep _AdjSuper
+1	_Prep	Prep _Adv
+1	_Prep	Prep _CD
+1	_Prep	Prep _Det
+1	_Prep	Prep _DoDoes
+1	_Prep	Prep _EOS
+1	_Prep	Prep _Misc
+1	_Prep	Prep _Modal
+1	_Prep	Prep _Noun
+1	_Prep	Prep _Nouns
+1	_Prep	Prep _PAUSE
+1	_Prep	Prep _Prep
+1	_Prep	Prep _Proper
+1	_Prep	Prep _ProperObj
+1	_Prep	Prep _Prp
+1	_Prep	Prep _Prps
+1	_Prep	Prep _Subconj
+1	_Prep	Prep _Vb
+1	_Prep	Prep _Vbd
+1	_Prep	Prep _Vbg
+1	_Prep	Prep _Vbn
+1	_Prep	Prep _Vbz
+1	_Prep	Prep _Vbzs
+1	_Prep	Prep _VerbT
+1	_Prep	Prep _WhAdv
+1	_Prep	Prep _WhDet
+1	_Proper	Proper
+1	_Proper	Proper _Adj
+1	_Proper	Proper _AdjComp
+1	_Proper	Proper _AdjSuper
+1	_Proper	Proper _Adv
+1	_Proper	Proper _CD
+1	_Proper	Proper _Det
+1	_Proper	Proper _DoDoes
+1	_Proper	Proper _EOS
+1	_Proper	Proper _Misc
+1	_Proper	Proper _Modal
+1	_Proper	Proper _Noun
+1	_Proper	Proper _Nouns
+1	_Proper	Proper _PAUSE
+1	_Proper	Proper _Prep
+1	_Proper	Proper _Proper
+1	_Proper	Proper _ProperObj
+1	_Proper	Proper _Prp
+1	_Proper	Proper _Prps
+1	_Proper	Proper _Subconj
+1	_Proper	Proper _Vb
+1	_Proper	Proper _Vbd
+1	_Proper	Proper _Vbg
+1	_Proper	Proper _Vbn
+1	_Proper	Proper _Vbz
+1	_Proper	Proper _Vbzs
+1	_Proper	Proper _VerbT
+1	_Proper	Proper _WhAdv
+1	_Proper	Proper _WhDet
+1	_ProperObj	ProperObj
+1	_ProperObj	ProperObj _Adj
+1	_ProperObj	ProperObj _AdjComp
+1	_ProperObj	ProperObj _AdjSuper
+1	_ProperObj	ProperObj _Adv
+1	_ProperObj	ProperObj _CD
+1	_ProperObj	ProperObj _Det
+1	_ProperObj	ProperObj _DoDoes
+1	_ProperObj	ProperObj _EOS
+1	_ProperObj	ProperObj _Misc
+1	_ProperObj	ProperObj _Modal
+1	_ProperObj	ProperObj _Noun
+1	_ProperObj	ProperObj _Nouns
+1	_ProperObj	ProperObj _PAUSE
+1	_ProperObj	ProperObj _Prep
+1	_ProperObj	ProperObj _Proper
+1	_ProperObj	ProperObj _ProperObj
+1	_ProperObj	ProperObj _Prp
+1	_ProperObj	ProperObj _Prps
+1	_ProperObj	ProperObj _Subconj
+1	_ProperObj	ProperObj _Vb
+1	_ProperObj	ProperObj _Vbd
+1	_ProperObj	ProperObj _Vbg
+1	_ProperObj	ProperObj _Vbn
+1	_ProperObj	ProperObj _Vbz
+1	_ProperObj	ProperObj _Vbzs
+1	_ProperObj	ProperObj _VerbT
+1	_ProperObj	ProperObj _WhAdv
+1	_ProperObj	ProperObj _WhDet
+1	_Prp	Prp
+1	_Prp	Prp _Adj
+1	_Prp	Prp _AdjComp
+1	_Prp	Prp _AdjSuper
+1	_Prp	Prp _Adv
+1	_Prp	Prp _CD
+1	_Prp	Prp _Det
+1	_Prp	Prp _DoDoes
+1	_Prp	Prp _EOS
+1	_Prp	Prp _Misc
+1	_Prp	Prp _Modal
+1	_Prp	Prp _Noun
+1	_Prp	Prp _Nouns
+1	_Prp	Prp _PAUSE
+1	_Prp	Prp _Prep
+1	_Prp	Prp _Proper
+1	_Prp	Prp _ProperObj
+1	_Prp	Prp _Prp
+1	_Prp	Prp _Prps
+1	_Prp	Prp _Subconj
+1	_Prp	Prp _Vb
+1	_Prp	Prp _Vbd
+1	_Prp	Prp _Vbg
+1	_Prp	Prp _Vbn
+1	_Prp	Prp _Vbz
+1	_Prp	Prp _Vbzs
+1	_Prp	Prp _VerbT
+1	_Prp	Prp _WhAdv
+1	_Prp	Prp _WhDet
+1	_Prps	Prps
+1	_Prps	Prps _Adj
+1	_Prps	Prps _AdjComp
+1	_Prps	Prps _AdjSuper
+1	_Prps	Prps _Adv
+1	_Prps	Prps _CD
+1	_Prps	Prps _Det
+1	_Prps	Prps _DoDoes
+1	_Prps	Prps _EOS
+1	_Prps	Prps _Misc
+1	_Prps	Prps _Modal
+1	_Prps	Prps _Noun
+1	_Prps	Prps _Nouns
+1	_Prps	Prps _PAUSE
+1	_Prps	Prps _Prep
+1	_Prps	Prps _Proper
+1	_Prps	Prps _ProperObj
+1	_Prps	Prps _Prp
+1	_Prps	Prps _Prps
+1	_Prps	Prps _Subconj
+1	_Prps	Prps _Vb
+1	_Prps	Prps _Vbd
+1	_Prps	Prps _Vbg
+1	_Prps	Prps _Vbn
+1	_Prps	Prps _Vbz
+1	_Prps	Prps _Vbzs
+1	_Prps	Prps _VerbT
+1	_Prps	Prps _WhAdv
+1	_Prps	Prps _WhDet
 1	_Subconj	Subconj
-1	_Subconj	Subconj _Det
-1	_Subconj	Subconj _Misc
-1	_Subconj	Subconj _Noun
-1	_Subconj	Subconj _Prep
-1	_Subconj	Subconj _Proper
-1	_Subconj	Subconj _VerbT
-1	_Subconj	Subconj _Vbd
-1	_Subconj	Subconj _Vbg
-1	_Subconj	Subconj _Vbn
 1	_Subconj	Subconj _Adj
 1	_Subconj	Subconj _AdjComp
 1	_Subconj	Subconj _AdjSuper
-1	_Subconj	Subconj _ProperObj
-1	_Subconj	Subconj _PAUSE
+1	_Subconj	Subconj _Adv
+1	_Subconj	Subconj _CD
+1	_Subconj	Subconj _Det
+1	_Subconj	Subconj _DoDoes
+1	_Subconj	Subconj _EOS
+1	_Subconj	Subconj _Misc
+1	_Subconj	Subconj _Modal
+1	_Subconj	Subconj _Noun
 1	_Subconj	Subconj _Nouns
-1	_Subconj	Subconj _Vb
-1	_Subconj	Subconj _Vbz
-1	_Subconj	Subconj _Vbzs
+1	_Subconj	Subconj _PAUSE
+1	_Subconj	Subconj _Prep
+1	_Subconj	Subconj _Proper
+1	_Subconj	Subconj _ProperObj
 1	_Subconj	Subconj _Prp
 1	_Subconj	Subconj _Prps
-1	_Subconj	Subconj _DoDoes
-1	_Subconj	Subconj _WhAdv
-1	_Subconj	Subconj _CD
-1	_Subconj	Subconj _Modal
-1	_Subconj	Subconj _Adv
 1	_Subconj	Subconj _Subconj
+1	_Subconj	Subconj _Vb
+1	_Subconj	Subconj _Vbd
+1	_Subconj	Subconj _Vbg
+1	_Subconj	Subconj _Vbn
+1	_Subconj	Subconj _Vbz
+1	_Subconj	Subconj _Vbzs
+1	_Subconj	Subconj _VerbT
+1	_Subconj	Subconj _WhAdv
 1	_Subconj	Subconj _WhDet
-
-
+1	_Vb	Vb
+1	_Vb	Vb _Adj
+1	_Vb	Vb _AdjComp
+1	_Vb	Vb _AdjSuper
+1	_Vb	Vb _Adv
+1	_Vb	Vb _CD
+1	_Vb	Vb _Det
+1	_Vb	Vb _DoDoes
+1	_Vb	Vb _EOS
+1	_Vb	Vb _Misc
+1	_Vb	Vb _Modal
+1	_Vb	Vb _Noun
+1	_Vb	Vb _Nouns
+1	_Vb	Vb _PAUSE
+1	_Vb	Vb _Prep
+1	_Vb	Vb _Proper
+1	_Vb	Vb _ProperObj
+1	_Vb	Vb _Prp
+1	_Vb	Vb _Prps
+1	_Vb	Vb _Subconj
+1	_Vb	Vb _Vb
+1	_Vb	Vb _Vbd
+1	_Vb	Vb _Vbg
+1	_Vb	Vb _Vbn
+1	_Vb	Vb _Vbz
+1	_Vb	Vb _Vbzs
+1	_Vb	Vb _VerbT
+1	_Vb	Vb _WhAdv
+1	_Vb	Vb _WhDet
+1	_Vbd	Vbd
+1	_Vbd	Vbd _Adj
+1	_Vbd	Vbd _AdjComp
+1	_Vbd	Vbd _AdjSuper
+1	_Vbd	Vbd _Adv
+1	_Vbd	Vbd _CD
+1	_Vbd	Vbd _Det
+1	_Vbd	Vbd _DoDoes
+1	_Vbd	Vbd _EOS
+1	_Vbd	Vbd _Misc
+1	_Vbd	Vbd _Modal
+1	_Vbd	Vbd _Noun
+1	_Vbd	Vbd _Nouns
+1	_Vbd	Vbd _PAUSE
+1	_Vbd	Vbd _Prep
+1	_Vbd	Vbd _Proper
+1	_Vbd	Vbd _ProperObj
+1	_Vbd	Vbd _Prp
+1	_Vbd	Vbd _Prps
+1	_Vbd	Vbd _Subconj
+1	_Vbd	Vbd _Vb
+1	_Vbd	Vbd _Vbd
+1	_Vbd	Vbd _Vbg
+1	_Vbd	Vbd _Vbn
+1	_Vbd	Vbd _Vbz
+1	_Vbd	Vbd _Vbzs
+1	_Vbd	Vbd _VerbT
+1	_Vbd	Vbd _WhAdv
+1	_Vbd	Vbd _WhDet
+1	_Vbg	Vbg
+1	_Vbg	Vbg _Adj
+1	_Vbg	Vbg _AdjComp
+1	_Vbg	Vbg _AdjSuper
+1	_Vbg	Vbg _Adv
+1	_Vbg	Vbg _CD
+1	_Vbg	Vbg _Det
+1	_Vbg	Vbg _DoDoes
+1	_Vbg	Vbg _EOS
+1	_Vbg	Vbg _Misc
+1	_Vbg	Vbg _Modal
+1	_Vbg	Vbg _Noun
+1	_Vbg	Vbg _Nouns
+1	_Vbg	Vbg _PAUSE
+1	_Vbg	Vbg _Prep
+1	_Vbg	Vbg _Proper
+1	_Vbg	Vbg _ProperObj
+1	_Vbg	Vbg _Prp
+1	_Vbg	Vbg _Prps
+1	_Vbg	Vbg _Subconj
+1	_Vbg	Vbg _Vb
+1	_Vbg	Vbg _Vbd
+1	_Vbg	Vbg _Vbg
+1	_Vbg	Vbg _Vbn
+1	_Vbg	Vbg _Vbz
+1	_Vbg	Vbg _Vbzs
+1	_Vbg	Vbg _VerbT
+1	_Vbg	Vbg _WhAdv
+1	_Vbg	Vbg _WhDet
+1	_Vbn	Vbn
+1	_Vbn	Vbn _Adj
+1	_Vbn	Vbn _AdjComp
+1	_Vbn	Vbn _AdjSuper
+1	_Vbn	Vbn _Adv
+1	_Vbn	Vbn _CD
+1	_Vbn	Vbn _Det
+1	_Vbn	Vbn _DoDoes
+1	_Vbn	Vbn _EOS
+1	_Vbn	Vbn _Misc
+1	_Vbn	Vbn _Modal
+1	_Vbn	Vbn _Noun
+1	_Vbn	Vbn _Nouns
+1	_Vbn	Vbn _PAUSE
+1	_Vbn	Vbn _Prep
+1	_Vbn	Vbn _Proper
+1	_Vbn	Vbn _ProperObj
+1	_Vbn	Vbn _Prp
+1	_Vbn	Vbn _Prps
+1	_Vbn	Vbn _Subconj
+1	_Vbn	Vbn _Vb
+1	_Vbn	Vbn _Vbd
+1	_Vbn	Vbn _Vbg
+1	_Vbn	Vbn _Vbn
+1	_Vbn	Vbn _Vbz
+1	_Vbn	Vbn _Vbzs
+1	_Vbn	Vbn _VerbT
+1	_Vbn	Vbn _WhAdv
+1	_Vbn	Vbn _WhDet
+1	_Vbz	Vbz
+1	_Vbz	Vbz _Adj
+1	_Vbz	Vbz _AdjComp
+1	_Vbz	Vbz _AdjSuper
+1	_Vbz	Vbz _Adv
+1	_Vbz	Vbz _CD
+1	_Vbz	Vbz _Det
+1	_Vbz	Vbz _DoDoes
+1	_Vbz	Vbz _EOS
+1	_Vbz	Vbz _Misc
+1	_Vbz	Vbz _Modal
+1	_Vbz	Vbz _Noun
+1	_Vbz	Vbz _Nouns
+1	_Vbz	Vbz _PAUSE
+1	_Vbz	Vbz _Prep
+1	_Vbz	Vbz _Proper
+1	_Vbz	Vbz _ProperObj
+1	_Vbz	Vbz _Prp
+1	_Vbz	Vbz _Prps
+1	_Vbz	Vbz _Subconj
+1	_Vbz	Vbz _Vb
+1	_Vbz	Vbz _Vbd
+1	_Vbz	Vbz _Vbg
+1	_Vbz	Vbz _Vbn
+1	_Vbz	Vbz _Vbz
+1	_Vbz	Vbz _Vbzs
+1	_Vbz	Vbz _VerbT
+1	_Vbz	Vbz _WhAdv
+1	_Vbz	Vbz _WhDet
+1	_Vbzs	Vbzs
+1	_Vbzs	Vbzs _Adj
+1	_Vbzs	Vbzs _AdjComp
+1	_Vbzs	Vbzs _AdjSuper
+1	_Vbzs	Vbzs _Adv
+1	_Vbzs	Vbzs _CD
+1	_Vbzs	Vbzs _Det
+1	_Vbzs	Vbzs _DoDoes
+1	_Vbzs	Vbzs _EOS
+1	_Vbzs	Vbzs _Misc
+1	_Vbzs	Vbzs _Modal
+1	_Vbzs	Vbzs _Noun
+1	_Vbzs	Vbzs _Nouns
+1	_Vbzs	Vbzs _PAUSE
+1	_Vbzs	Vbzs _Prep
+1	_Vbzs	Vbzs _Proper
+1	_Vbzs	Vbzs _ProperObj
+1	_Vbzs	Vbzs _Prp
+1	_Vbzs	Vbzs _Prps
+1	_Vbzs	Vbzs _Subconj
+1	_Vbzs	Vbzs _Vb
+1	_Vbzs	Vbzs _Vbd
+1	_Vbzs	Vbzs _Vbg
+1	_Vbzs	Vbzs _Vbn
+1	_Vbzs	Vbzs _Vbz
+1	_Vbzs	Vbzs _Vbzs
+1	_Vbzs	Vbzs _VerbT
+1	_Vbzs	Vbzs _WhAdv
+1	_Vbzs	Vbzs _WhDet
+1	_VerbT	VerbT
+1	_VerbT	VerbT _Adj
+1	_VerbT	VerbT _AdjComp
+1	_VerbT	VerbT _AdjSuper
+1	_VerbT	VerbT _Adv
+1	_VerbT	VerbT _CD
+1	_VerbT	VerbT _Det
+1	_VerbT	VerbT _DoDoes
+1	_VerbT	VerbT _EOS
+1	_VerbT	VerbT _Misc
+1	_VerbT	VerbT _Modal
+1	_VerbT	VerbT _Noun
+1	_VerbT	VerbT _Nouns
+1	_VerbT	VerbT _PAUSE
+1	_VerbT	VerbT _Prep
+1	_VerbT	VerbT _Proper
+1	_VerbT	VerbT _ProperObj
+1	_VerbT	VerbT _Prp
+1	_VerbT	VerbT _Prps
+1	_VerbT	VerbT _Subconj
+1	_VerbT	VerbT _Vb
+1	_VerbT	VerbT _Vbd
+1	_VerbT	VerbT _Vbg
+1	_VerbT	VerbT _Vbn
+1	_VerbT	VerbT _Vbz
+1	_VerbT	VerbT _Vbzs
+1	_VerbT	VerbT _VerbT
+1	_VerbT	VerbT _WhAdv
+1	_VerbT	VerbT _WhDet
+1	_WhAdv	WhAdv
+1	_WhAdv	WhAdv _Adj
+1	_WhAdv	WhAdv _AdjComp
+1	_WhAdv	WhAdv _AdjSuper
+1	_WhAdv	WhAdv _Adv
+1	_WhAdv	WhAdv _CD
+1	_WhAdv	WhAdv _Det
+1	_WhAdv	WhAdv _DoDoes
+1	_WhAdv	WhAdv _EOS
+1	_WhAdv	WhAdv _Misc
+1	_WhAdv	WhAdv _Modal
+1	_WhAdv	WhAdv _Noun
+1	_WhAdv	WhAdv _Nouns
+1	_WhAdv	WhAdv _PAUSE
+1	_WhAdv	WhAdv _Prep
+1	_WhAdv	WhAdv _Proper
+1	_WhAdv	WhAdv _ProperObj
+1	_WhAdv	WhAdv _Prp
+1	_WhAdv	WhAdv _Prps
+1	_WhAdv	WhAdv _Subconj
+1	_WhAdv	WhAdv _Vb
+1	_WhAdv	WhAdv _Vbd
+1	_WhAdv	WhAdv _Vbg
+1	_WhAdv	WhAdv _Vbn
+1	_WhAdv	WhAdv _Vbz
+1	_WhAdv	WhAdv _Vbzs
+1	_WhAdv	WhAdv _VerbT
+1	_WhAdv	WhAdv _WhAdv
+1	_WhAdv	WhAdv _WhDet
 1	_WhDet	WhDet
-1	_WhDet	WhDet _Det
-1	_WhDet	WhDet _Misc
-1	_WhDet	WhDet _Noun
-1	_WhDet	WhDet _Prep
-1	_WhDet	WhDet _Proper
-1	_WhDet	WhDet _VerbT
-1	_WhDet	WhDet _Vbd
-1	_WhDet	WhDet _Vbg
-1	_WhDet	WhDet _Vbn
 1	_WhDet	WhDet _Adj
 1	_WhDet	WhDet _AdjComp
 1	_WhDet	WhDet _AdjSuper
-1	_WhDet	WhDet _ProperObj
-1	_WhDet	WhDet _PAUSE
+1	_WhDet	WhDet _Adv
+1	_WhDet	WhDet _CD
+1	_WhDet	WhDet _Det
+1	_WhDet	WhDet _DoDoes
+1	_WhDet	WhDet _EOS
+1	_WhDet	WhDet _Misc
+1	_WhDet	WhDet _Modal
+1	_WhDet	WhDet _Noun
 1	_WhDet	WhDet _Nouns
-1	_WhDet	WhDet _Vb
-1	_WhDet	WhDet _Vbz
-1	_WhDet	WhDet _Vbzs
+1	_WhDet	WhDet _PAUSE
+1	_WhDet	WhDet _Prep
+1	_WhDet	WhDet _Proper
+1	_WhDet	WhDet _ProperObj
 1	_WhDet	WhDet _Prp
 1	_WhDet	WhDet _Prps
-1	_WhDet	WhDet _DoDoes
-1	_WhDet	WhDet _WhAdv
-1	_WhDet	WhDet _CD
-1	_WhDet	WhDet _Modal
-1	_WhDet	WhDet _Adv
 1	_WhDet	WhDet _Subconj
+1	_WhDet	WhDet _Vb
+1	_WhDet	WhDet _Vbd
+1	_WhDet	WhDet _Vbg
+1	_WhDet	WhDet _Vbn
+1	_WhDet	WhDet _Vbz
+1	_WhDet	WhDet _Vbzs
+1	_WhDet	WhDet _VerbT
+1	_WhDet	WhDet _WhAdv
 1	_WhDet	WhDet _WhDet
-
-
-
-

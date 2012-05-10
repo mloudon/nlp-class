@@ -1,8 +1,8 @@
 # The start symbol is START.
 
 # These two rules are required; choose their weights carefully!
-#99	START	S1
-1	START	S2
+25	START	S1
+75	START	S2
 
 15	S1	NP VP EOS
 10	S1	VP EOS

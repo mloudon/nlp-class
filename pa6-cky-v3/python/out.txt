@@ -1,0 +1,1231 @@
+PCFGParserTest options:
+  path        : ../data/
+  test_data   : 
+  max_length  : 6
+  parser      : PCFGParser
+  data        : masc
+
+Using parser: PCFGParser
+Data will be loaded from: ../data/
+Loading MASC training trees... from: ../data/parser/masc/train
+Reading MASC from ../data/parser/masc/train
+done.
+Train trees size: 3595
+First train tree: (ROOT
+  (NP
+    (NP (NN Inauguration))
+    (PP (IN of)
+      (NP
+        (NP (JJ free) (NN zone))
+        (PP (IN in)
+          (NP (NNP Dubai)))))
+    (PP (IN for)
+      (NP (NN e-commerce)))))
+
+Last train tree: (ROOT
+  (S
+    (SBAR (IN With)
+      (S
+        (NP (DT these) (JJ initial) (NNS victories))
+        (VP (VBN won)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN middle))
+              (PP (IN of)
+                (NP (CD 2002))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ global) (NN conflict))
+      (PP (IN against)
+        (NP (JJ Islamist) (NN terrorism))))
+    (VP (VBD became)
+      (NP
+        (NP (DT a) (JJ different) (NN kind))
+        (PP (IN of)
+          (NP (NN struggle)))))
+    (. .)))
+
+Loading MASC test trees...
+Reading MASC from ../data/parser/masc/devtest
+done.
+Test trees size: 355
+First test tree: (ROOT
+  (NP (DT A) (JJ Brief) (NN History)))
+
+Last test tree: (ROOT
+  (FRAG
+    (ADVP (RB Sincerely))
+    (, ,)
+    (NP
+      (NP (NNP John) (NNP Brandon))
+      (NP (NNP Executive) (NNP Director)))))
+
+
+Training parser...
+Testing parser
+done with grid for ['A', 'Brief', 'History']
+building tree from node NP at 0 3 with rule [0, 1, 1, 3, 'DT', '@NP->_DT']
+building tree from node DT at 0 1 with rule A
+building tree from node @NP->_DT at 1 3 with rule [1, 2, 2, 3, 'JJ', '@NP->_DT_JJ']
+building tree from node JJ at 1 2 with rule Brief
+building tree from node @NP->_DT_JJ at 2 3 with rule NN
+building tree from node NN at 2 3 with rule History
+Guess:
+(ROOT
+  (NP (DT A) (JJ Brief) (NN History)))
+
+Gold:
+(ROOT
+  (NP (DT A) (JJ Brief) (NN History)))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['Cycladic', 'Culture']
+building tree from node NP at 0 2 with rule [0, 1, 1, 2, 'NNP', '@NP->_NNP']
+building tree from node NNP at 0 1 with rule Cycladic
+building tree from node @NP->_NNP at 1 2 with rule NNP
+building tree from node NNP at 1 2 with rule Culture
+Guess:
+(ROOT
+  (NP (NNP Cycladic) (NNP Culture)))
+
+Gold:
+(ROOT
+  (NP (JJ Cycladic) (NN Culture)))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['The', 'people', 'farmed', 'and', 'fished', ';']
+building tree from node S at 0 6 with rule [0, 2, 2, 6, 'NP', '@S->_NP']
+building tree from node NP at 0 2 with rule [0, 1, 1, 2, 'DT', '@NP->_DT']
+building tree from node DT at 0 1 with rule The
+building tree from node @NP->_DT at 1 2 with rule NNS
+building tree from node NNS at 1 2 with rule people
+building tree from node @S->_NP at 2 6 with rule [2, 5, 5, 6, 'VP', '@S->_NP_VP']
+building tree from node VP at 2 5 with rule [2, 3, 3, 5, 'VBN', '@VP->_VBN']
+building tree from node VBN at 2 3 with rule farmed
+building tree from node @VP->_VBN at 3 5 with rule [3, 4, 4, 5, 'CC', '@VP->_VBN_CC']
+building tree from node CC at 3 4 with rule and
+building tree from node @VP->_VBN_CC at 4 5 with rule VBN
+building tree from node VBN at 4 5 with rule fished
+building tree from node @S->_NP_VP at 5 6 with rule .
+building tree from node . at 5 6 with rule ;
+Guess:
+(ROOT
+  (S
+    (NP (DT The) (NNS people))
+    (VP (VBN farmed)
+      (CC and)
+      (VBN fished))
+    (. ;)))
+
+Gold:
+(ROOT
+  (S
+    (NP (DT The) (NNS people))
+    (VP (VBD farmed)
+      (CC and)
+      (VBD fished))
+    (. ;)))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['The', 'Minoans', 'and', 'the', 'Myceneans']
+building tree from node NP at 0 5 with rule [0, 2, 2, 5, 'NP', '@NP->_NP']
+building tree from node NP at 0 2 with rule [0, 1, 1, 2, 'DT', '@NP->_DT']
+building tree from node DT at 0 1 with rule The
+building tree from node @NP->_DT at 1 2 with rule NN
+building tree from node NN at 1 2 with rule Minoans
+building tree from node @NP->_NP at 2 5 with rule [2, 3, 3, 5, 'CC', '@NP->_NP_CC']
+building tree from node CC at 2 3 with rule and
+building tree from node @NP->_NP_CC at 3 5 with rule NP
+building tree from node NP at 3 5 with rule [3, 4, 4, 5, 'DT', '@NP->_DT']
+building tree from node DT at 3 4 with rule the
+building tree from node @NP->_DT at 4 5 with rule NN
+building tree from node NN at 4 5 with rule Myceneans
+Guess:
+(ROOT
+  (NP
+    (NP (DT The) (NN Minoans))
+    (CC and)
+    (NP (DT the) (NN Myceneans))))
+
+Gold:
+(ROOT
+  (NP
+    (NP (DT The) (NNPS Minoans))
+    (CC and)
+    (NP (DT the) (NNPS Myceneans))))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['The', 'Rise', 'of', 'Athens']
+building tree from node NP at 0 4 with rule [0, 2, 2, 4, 'NP', '@NP->_NP']
+building tree from node NP at 0 2 with rule [0, 1, 1, 2, 'DT', '@NP->_DT']
+building tree from node DT at 0 1 with rule The
+building tree from node @NP->_DT at 1 2 with rule NN
+building tree from node NN at 1 2 with rule Rise
+building tree from node @NP->_NP at 2 4 with rule PP
+building tree from node PP at 2 4 with rule [2, 3, 3, 4, 'IN', '@PP->_IN']
+building tree from node IN at 2 3 with rule of
+building tree from node @PP->_IN at 3 4 with rule NP
+building tree from node NP at 3 4 with rule NN
+building tree from node NN at 3 4 with rule Athens
+Guess:
+(ROOT
+  (NP
+    (NP (DT The) (NN Rise))
+    (PP (IN of)
+      (NP (NN Athens)))))
+
+Gold:
+(ROOT
+  (NP
+    (NP (DT The) (NN Rise))
+    (PP (IN of)
+      (NP (NNP Athens)))))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['The', 'Persian', 'Wars']
+building tree from node NP at 0 3 with rule [0, 1, 1, 3, 'DT', '@NP->_DT']
+building tree from node DT at 0 1 with rule The
+building tree from node @NP->_DT at 1 3 with rule [1, 2, 2, 3, 'NNP', '@NP->_DT_NNP']
+building tree from node NNP at 1 2 with rule Persian
+building tree from node @NP->_DT_NNP at 2 3 with rule NNP
+building tree from node NNP at 2 3 with rule Wars
+Guess:
+(ROOT
+  (NP (DT The) (NNP Persian) (NNP Wars)))
+
+Gold:
+(ROOT
+  (NP (DT The) (JJ Persian) (NNS Wars)))
+
+ [Current]    P: 100.00   R: 100.00   F1: 100.00   EX: 100.00
+done with grid for ['Hellenistic', 'and', 'Roman', 'Periods']
+building tree from node NP at 0 4 with rule [0, 3, 3, 4, 'ADJP', '@NP->_ADJP']
+building tree from node ADJP at 0 3 with rule [0, 1, 1, 3, 'JJ', '@ADJP->_JJ']
+building tree from node JJ at 0 1 with rule Hellenistic
+building tree from node @ADJP->_JJ at 1 3 with rule [1, 2, 2, 3, 'CC', '@ADJP->_JJ_CC']
+building tree from node CC at 1 2 with rule and
+building tree from node @ADJP->_JJ_CC at 2 3 with rule JJ
+building tree from node JJ at 2 3 with rule Roman
+building tree from node @NP->_ADJP at 3 4 with rule NNS
+building tree from node NNS at 3 4 with rule Periods
+Guess:
+(ROOT
+  (NP
+    (ADJP (JJ Hellenistic)
+      (CC and)
+      (JJ Roman))
+    (NNS Periods)))
+
+Gold:
+(ROOT
+  (NP (JJ Hellenistic)
+    (CC and)
+    (JJ Roman) (NNS Periods)))
+
+ [Current]    P: 50.00   R: 100.00   F1: 66.67   EX:  0.00
+done with grid for ['Disease', 'took', 'a', 'further', 'toll', '.']
+building tree from node S at 0 6 with rule [0, 1, 1, 6, 'NP', '@S->_NP']
+building tree from node NP at 0 1 with rule NNP
+building tree from node NNP at 0 1 with rule Disease
+building tree from node @S->_NP at 1 6 with rule [1, 5, 5, 6, 'VP', '@S->_NP_VP']
+building tree from node VP at 1 5 with rule [1, 2, 2, 5, 'VBD', '@VP->_VBD']
+building tree from node VBD at 1 2 with rule took
+building tree from node @VP->_VBD at 2 5 with rule NP
+building tree from node NP at 2 5 with rule [2, 3, 3, 5, 'DT', '@NP->_DT']
+building tree from node DT at 2 3 with rule a
+building tree from node @NP->_DT at 3 5 with rule [3, 4, 4, 5, 'JJ', '@NP->_DT_JJ']
+building tree from node JJ at 3 4 with rule further
+building tree from node @NP->_DT_JJ at 4 5 with rule NN
+building tree from node NN at 4 5 with rule toll
+building tree from node @S->_NP_VP at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
+building tree from node . at 5 6 with rule .
