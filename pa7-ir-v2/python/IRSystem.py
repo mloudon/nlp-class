@@ -9,6 +9,8 @@ from PorterStemmer import PorterStemmer
 
 from operator import itemgetter
 
+from collections import Counter
+
 
 class IRSystem:
 
@@ -250,12 +252,24 @@ class IRSystem:
         # TODO: Implement Boolean retrieval. You will want to use your
         #       inverted index that you created in index().
         # Right now this just returns all the possible documents!
-        docs = []
-        for d in range(len(self.docs)):
-            docs.append(d)
+        
+        
+        counter = Counter()
+        
+        query = list(set(query))
+        
+        for word in query:
+            for docnum in self.inv_index[word]:
+                counter[docnum] += 1
 
         # ------------------------------------------------------------------
 
+        docs = []
+        for docnum in counter:
+            if counter[docnum] == len(query):
+                print 'adding doc %d with matches %d' % (docnum, counter[docnum])
+                docs.append(docnum)
+        
         return sorted(docs)   # sorted doesn't actually matter
 
 
